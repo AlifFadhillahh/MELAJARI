@@ -2,6 +2,7 @@ const items = [
   "images/title/Banjar.webp",
   "images/title/Bakumpai.webp",
   "images/title/Meratus.webp",
+  "images/title/Sora.webp",
 ]; // Daftar path gambar yang akan ditampilkan
 let currentItemIndex = 0; // Indeks item saat ini
 
@@ -16,6 +17,7 @@ const itemURLs = {
   "images/title/Banjar.webp": "select-banjar.html",
   "images/title/Bakumpai.webp": "select-bakumpai.html",
   "images/title/Meratus.webp": "select-meratus.html",
+  "images/title/Sora.webp": "select-game.html",
 };
 
 // Fungsi untuk menampilkan item berikutnya

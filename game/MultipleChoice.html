@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adat Istiadat</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .container {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('../images/bg/Suku-Kalimantan.webp'); background-size: cover;">
+    <div id="rotate-device-message">
+        <p>Please rotate your device to landscape mode</p>
+    </div>
+    <section class="home-grid">
+        <div class="button-container">
+            <img src="../images/button/back.webp" class="nav-button" id="back-button">
+            <img src="../images/button/home.webp" class="nav-button" id="home-button">
+        </div>
+        <div class="container">
+            <h1>Quiz</h1>
+            <div id="question-text" class="question-text"></div>
+            <div class="quiz-container" id="quiz-container">
+            </div>
+            <div id="completion-message" class="completion-message"></div>
+            <button id="next-button" class="next-button" style="display: none;" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <script src="../js/orientation.js"></script>
+        <script src="../js/banjar/adat-istiadat/perkawinan.js"></script>
+        <script type="module" src="../assets/js/multipleChoice.js"></script>
+</body>
+
+</html>
