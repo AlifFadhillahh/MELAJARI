@@ -3,6 +3,8 @@ import { wordPuzzle } from './puzzleAssets.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     let currentWordIndex = 0;
+    let draggedChar = null;
+    let source = null;
 
     function initializePuzzle() {
         const puzzle = wordPuzzle.level0[currentWordIndex];
@@ -25,10 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
         word.split('').forEach(() => {
             const dropBox = document.createElement('div');
             dropBox.classList.add('drop-box');
-            dropBox.setAttribute('draggable', true);
             dropBox.addEventListener('dragover', (event) => event.preventDefault());
             dropBox.addEventListener('dragstart', handleDragStartWithinWordContainer);
             dropBox.addEventListener('drop', handleDrop);
+            dropBox.addEventListener('touchstart', handleTouchStart);
+            dropBox.addEventListener('touchend', handleTouchEnd);
             wordContainer.appendChild(dropBox);
         });
 
@@ -39,19 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
             charBox.setAttribute('draggable', true);
             charBox.addEventListener('dragstart', handleDragStart);
             charBox.addEventListener('dragend', handleDragEnd);
+            charBox.addEventListener('touchstart', handleTouchStart);
+            charBox.addEventListener('touchmove', handleTouchMove);
+            charBox.addEventListener('touchend', handleTouchEnd);
             charContainer.appendChild(charBox);
         });
     }
 
     function handleDragStartWithinWordContainer(event) {
-        const draggedChar = event.target.textContent;
+        draggedChar = event.target.textContent;
+        source = event.target.parentElement.id;
         event.dataTransfer.setData('text/plain', draggedChar);
-        event.dataTransfer.setData('source', event.target.parentElement.id);
     }
 
     function handleDragStart(event) {
-        event.dataTransfer.setData('text/plain', event.target.textContent);
-        event.dataTransfer.setData('source', event.target.parentElement.id);
+        draggedChar = event.target.textContent;
+        source = event.target.parentElement.id;
+        event.dataTransfer.setData('text/plain', draggedChar);
         setTimeout(() => {
             event.target.classList.add('hide');
         }, 0);
@@ -63,13 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleDrop(event) {
         event.preventDefault();
-        const draggedChar = event.dataTransfer.getData('text/plain');
-        const source = event.dataTransfer.getData('source');
+        if (!draggedChar) return;
 
-        if (event.target.classList.contains('drop-box')) {
-            const existingChar = event.target.textContent;
+        const target = event.target;
+        if (target.classList.contains('drop-box')) {
+            const existingChar = target.textContent;
 
-            // Hapus huruf dari posisi asal jika sumbernya adalah word-container
             if (existingChar !== draggedChar) {
                 if (source === 'word-container') {
                     const originalBox = Array.from(document.querySelectorAll('.drop-box')).find(box => box.textContent === draggedChar);
@@ -79,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (charBox) charBox.remove();
                 }
 
-                // Hapus huruf dari kotak sebelumnya jika ada
                 const dropBoxes = document.querySelectorAll('.drop-box');
                 dropBoxes.forEach(box => {
                     if (box.textContent === '') {
@@ -87,11 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                // Tambahkan huruf ke posisi baru
-                event.target.textContent = draggedChar;
-                event.target.classList.add('filled');
+                target.textContent = draggedChar;
+                target.classList.add('filled');
 
-                // Jika ada huruf sebelumnya di kotak target, kembalikan ke kontainer huruf
                 if (existingChar) {
                     const charBox = document.createElement('div');
                     charBox.classList.add('char-box');
@@ -99,13 +102,46 @@ document.addEventListener('DOMContentLoaded', () => {
                     charBox.setAttribute('draggable', true);
                     charBox.addEventListener('dragstart', handleDragStart);
                     charBox.addEventListener('dragend', handleDragEnd);
+                    charBox.addEventListener('touchstart', handleTouchStart);
+                    charBox.addEventListener('touchmove', handleTouchMove);
+                    charBox.addEventListener('touchend', handleTouchEnd);
                     document.getElementById('char-container').appendChild(charBox);
                 }
             }
 
+            checkCompletion();
+        }
+        draggedChar = null;
+    }
+
+    function handleTouchStart(event) {
+        const touch = event.touches[0];
+        draggedChar = event.target.textContent;
+        source = event.target.parentElement.id;
+        event.target.classList.add('hide');
+    }
+
+    function handleTouchMove(event) {
+        event.preventDefault();
+        const touch = event.touches[0];
+        const target = document.elementFromPoint(touch.clientX, touch.clientY);
+
+        if (target && target.classList.contains('drop-box')) {
+            target.classList.add('drop-target');
+        }
+    }
+
+    function handleTouchEnd(event) {
+        const touch = event.changedTouches[0];
+        const target = document.elementFromPoint(touch.clientX, touch.clientY);
+
+        if (target && target.classList.contains('drop-box')) {
+            handleDrop({ target, preventDefault: () => {} });
         }
 
-        checkCompletion();
+        document.querySelectorAll('.drop-target').forEach(el => el.classList.remove('drop-target'));
+        const charBox = document.querySelector('.char-box.hide');
+        if (charBox) charBox.classList.remove('hide');
     }
 
     function checkCompletion() {
@@ -146,6 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
         dropBoxes.forEach(box => {
             box.removeEventListener('dragover', (event) => event.preventDefault());
             box.removeEventListener('drop', handleDrop);
+            box.removeEventListener('touchstart', handleTouchStart);
+            box.removeEventListener('touchend', handleTouchEnd);
         });
     }
 
@@ -161,6 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 charBox.setAttribute('draggable', true);
                 charBox.addEventListener('dragstart', handleDragStart);
                 charBox.addEventListener('dragend', handleDragEnd);
+                charBox.addEventListener('touchstart', handleTouchStart);
+                charBox.addEventListener('touchmove', handleTouchMove);
+                charBox.addEventListener('touchend', handleTouchEnd);
                 charContainer.appendChild(charBox);
                 box.textContent = '';
                 box.classList.remove('filled');
