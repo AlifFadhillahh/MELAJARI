@@ -62,6 +62,20 @@ aside img {
     /* Rounded corners */
 }
 
+.course-content-text {
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.course-content-text p {
+    margin-bottom: 20px;
+    /* Memberikan ruang antara paragraf */
+    text-align: left;
+    /* Rata kiri untuk paragraf */
+}
+
+
 .video-container {
     position: relative;
     width: 100%;
@@ -218,15 +232,50 @@ aside img {
 .item {
     text-align: center;
     transition: transform 0.2s ease-in-out;
+    /* Warna latar belakang dengan opacity */
+    border-radius: 15px;
+    /* Sudut tumpul */
+    padding: 20px;
+    /* Padding untuk memberikan ruang di sekitar teks */
+    display: inline-block;
+    /* Untuk mengatur ukuran elemen sesuai dengan konten */
+    margin: 100px;
+}
+
+.item h1,
+.item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    /* Warna teks */
+    margin: 10px 0;
+    /* Margin untuk memberikan ruang di sekitar heading */
+}
+
+.item p {
+    font-size: 18px;
+    color: black;
+    /* Warna teks */
+    margin: 10px 0;
+    /* Margin untuk memberikan ruang di sekitar paragraf */
 }
 
 .item img {
-    width: 45%;
+    width: 50%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Mengatur margin auto untuk secara otomatis memposisikan gambar di tengah */
+    max-width: 100%;
+    /* Mengatur lebar maksimum gambar agar tidak melebihi lebar konten */
+    height: auto;
+    /* Mengatur tinggi gambar agar sesuai dengan proporsi aslinya */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat digulirkan */
 }
 
-.item:active {
-    animation: itemBounce 0.3s;
+.item :active {
+    animation: itemBounce 0.5s;
 }
 
 @keyframes itemBounce {
@@ -305,40 +354,99 @@ aside img {
     }
 }
 
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 250px;
+    margin: 10px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
 /* Gaya untuk mode landscape pada mobile */
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
     .home-grid {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 0;
+        padding: 10px;
+        height: 100vh;
+        /* Memaksa tinggi home-grid mengisi tinggi layar penuh */
     }
 
-    .name-button img {
-        width: 200px;
-    }
-
+    .name-button img,
     .play-exit-buttons img {
-        width: 200px;
+        width: 150px;
+        /* Mengurangi lebar gambar tombol untuk konsistensi */
     }
 
     .button-container {
         top: 5px;
         left: 5px;
         gap: 5px;
+        /* Mengatur posisi dan jarak antara tombol navigasi */
     }
 
     .nav-button {
-        width: 50px;
+        width: 40px;
         height: auto;
+        /* Mengurangi ukuran tombol navigasi */
     }
 
     .arrow {
-        width: 150px;
+        width: 120px;
         height: auto;
+        /* Mengurangi ukuran panah navigasi */
     }
 
     .item img {
-        width: 40%;
+        width: 50%;
+        /* Mengurangi lebar gambar di dalam item */
+    }
+
+    .content-container {
+        padding: 5px;
+        margin: 0;
+        /* Mengurangi padding dan margin agar konten lebih sesuai dengan ukuran layar */
+    }
+
+    .course-content {
+        padding: 10px;
+        font-size: 14px;
+        /* Mengurangi ukuran font untuk memperbaiki legibilitas di layar yang lebih kecil */
+        overflow-y: auto;
+        /* Menambahkan scroll vertikal jika konten terlalu panjang */
+        max-height: 60vh;
+        /* Batas tinggi maksimum agar konten tetap dalam area yang terlihat */
+    }
+
+    .course-content-text {
+        font-size: 14px;
+        line-height: 1.4;
+        /* Menambahkan spasi antara baris untuk memperjelas teks */
+    }
+
+    .card {
+        flex: 1 1 150px;
+        max-width: 200px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
     }
 }
