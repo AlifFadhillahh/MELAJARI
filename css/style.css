@@ -40,7 +40,7 @@ aside {
 
 aside img {
     display: block;
-    width: 150%;
+    width: 120%;
     margin-bottom: 50px;
 }
 
@@ -48,7 +48,7 @@ aside img {
 .content-container {
     flex: 1;
     /* Memanjangkan content-container sepanjang sisa ruang */
-    padding: 150px;
+    padding: 40px;
     overflow-y: auto;
     /* Membuat konten scrollable secara vertikal jika melebihi kontainer */
 }
@@ -64,7 +64,7 @@ aside img {
 
 .course-content-text {
     text-align: left;
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px 0;
 }
 
@@ -110,6 +110,7 @@ aside img {
 
 .name-button img {
     margin-bottom: 40px;
+    width: 70%;
 }
 
 .play-exit-buttons {
@@ -122,7 +123,7 @@ aside img {
 .play-exit-buttons img {
     margin-top: -60px;
     /* Sesuaikan jika perlu */
-    width: 150%;
+    width: 110%;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     transform-origin: center;
@@ -169,6 +170,10 @@ aside img {
     z-index: 2;
 }
 
+.button-container img {
+    width: 30%;
+}
+
 .nav-button {
     width: 80px;
     /* Ukuran default untuk desktop */
@@ -199,6 +204,10 @@ aside img {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     z-index: 2;
+}
+
+.arrow {
+    width: 120px;
 }
 
 #left-arrow {
@@ -253,7 +262,7 @@ aside img {
 }
 
 .item p {
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     /* Warna teks */
     margin: 10px 0;

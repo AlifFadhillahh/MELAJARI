@@ -1,17 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Ambil elemen button dan konten course-content
-  const materiButton = document.getElementById("materi-button");
-  const videoButton = document.getElementById("video-button");
-  const courseContent = document.getElementById("course-content");
-  const homeButton = document.getElementById("home-button");
-  const backButton = document.getElementById("back-button");
+<!DOCTYPE html>
+<html lang="en">
 
-  // Tambahkan event listener untuk tombol materi
-  if (materiButton) {
-    materiButton.addEventListener("click", function () {
-      // Ganti isi konten dengan konten materi
-      courseContent.innerHTML = `
-      <h1 class="course-title">Adat Istiadat Kematian dalam Suku Banjar</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adat Istiadat - Perkawinan</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .home-grid {
+            align-items: unset;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('../../images/bg/Suku-Kalimantan.webp'); background-size: cover;">
+    <div id="rotate-device-message">
+        <p>Please rotate your device to landscape mode</p>
+    </div>
+    <section class="home-grid">
+        <div class="button-container">
+            <img src="../../images/button/back.webp" class="nav-button" id="back-button">
+            <img src="../../images/button/home.webp" class="nav-button" id="home-button">
+        </div>
+        <div class="container">
+            <aside>
+                <img src="../../images/button/materi.webp" id="materi-button">
+                <img src="../../images/button/video.webp" id="video-button">
+            </aside>
+            <div class="content-container">
+                <div class="course-content" id="course-content">
+                    <h1 class="course-title">Adat Istiadat Kematian dalam Suku Banjar</h1>
                     <div class="course-content-text">
                         Pada masyarakat sukubangsa Banjar di Kalimantan Selatan terdapat serangkaian upacara yang
                         berkaitan dengan kematian. Apabila dalam suatu kampung diketahui ada yang meninggal dunia, maka
@@ -37,34 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="course-content-text">Informasi spesifik mengenai adat kematian dalam Suku Meratus tidak
                         disediakan, namun umumnya tradisi adat suku-suku di Kalimantan mengandung elemen-elemen
                         keagamaan dan komunitas yang kuat.</div>
-              `;
-    });
-  }
+                </div>
+            </div>
+        </div>
 
-  // Tambahkan event listener untuk tombol video
-  if (videoButton) {
-    videoButton.addEventListener("click", function () {
-      // Ganti isi konten dengan konten video
-      courseContent.innerHTML = `
-                  <h1 class="course-title">Kematian</h1>
-                  <div class="video-container">
-                      <iframe src="https://www.youtube.com/embed/fgQ6wUTI7fE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-              `;
-    });
-  }
+        <script src="../../js/orientation.js"></script>
+        <script src="../../js/course/adat-istiadat/kematian.js"></script>
+</body>
 
-  // Tambahkan event listener untuk tombol home
-  if (homeButton) {
-    homeButton.addEventListener("click", function () {
-      window.location.href = "../../home.html";
-    });
-  }
-
-  // Tambahkan event listener untuk tombol back
-  if (backButton) {
-    backButton.addEventListener("click", function () {
-      window.location.href = "../../adat-istiadat.html";
-    });
-  }
-});
+</html>
