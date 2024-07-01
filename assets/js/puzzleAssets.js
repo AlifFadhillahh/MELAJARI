@@ -97,91 +97,45 @@ export const matchConect = {
 export const multipleChoice = {
   level0: [
     {
-      question:
-        "Apa tujuan utama orang tua dalam masyarakat Banjar mencarikan jodoh untuk anak laki-laki mereka?",
+      question: "Apa yang dimaksud dengan 'madihin'?",
       choices: [
-        "Agar anak laki-laki bisa mandiri",
-        "Agar anak laki-laki tidak keliru mempersunting gadis",
-        "Agar keluarga mendapatkan harta",
-        "Agar anak laki-laki bisa bekerja di luar kota",
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question:
-        "Dalam tradisi Bapapai dari Suku Bakumpai, apa yang dilakukan dengan air dan bunga mayang pinang?",
-      choices: [
-        "Digunakan untuk menyiram tanaman",
-        "Digunakan untuk mencuci tangan",
-        "Dipercikkan kepada calon pengantin dan orang yang hadir",
-        "Dipakai untuk memasak",
+        "Sebuah alat musik tradisional",
+        "Sebuah tarian tradisional",
+        "Sebuah kesenian tradisional suku Banjar",
+        "Sebuah jenis makanan tradisional",
       ],
       correctAnswer: 2,
     },
     {
       question:
-        "Apa yang dilakukan oleh masyarakat Banjar ketika ada warga kampung yang meninggal?",
+        "Siapa tokoh yang memiliki peran dalam penyebaran dan perkembangan kesenian madihin?",
+      choices: ["Dulah Nyangnyang", "Pemain pamadihinan", "Tarbang", "Thaha"],
+      correctAnswer: 0,
+    },
+    {
+      question: "Apa yang dimaksud dengan 'kekayaan budaya tak benda'?",
       choices: [
-        "Mereka mengadakan pesta",
-        "Mereka pergi berlibur",
-        "Mereka membantu keluarga yang ditimpa musibah dan melayat",
-        "Mereka pindah ke kampung lain",
+        "Kekayaan dalam bentuk uang",
+        "Kekayaan dalam bentuk harta benda",
+        "Kekayaan budaya yang tidak berwujud fisik",
+        "Kekayaan dalam bentuk makanan",
       ],
       correctAnswer: 2,
     },
     {
-      question:
-        "Apa yang dilakukan pada malam hari jika jenazah baru dapat dikuburkan setelah kedatangan ahli warisnya dalam adat Banjar?",
+      question: "Apa yang dimaksud dengan 'Balamut'?",
       choices: [
-        "Menyanyi dan menari",
-        "Membacakan ayat-ayat suci Al-Quran atau Surah Yassin secara bergantian",
-        "Bermain musik tradisional",
-        "Membuat kerajinan tangan",
+        "Sebuah alat musik tradisional",
+        "Sebuah tarian tradisional",
+        "Sebuah seni tradisi lisan bercerita rakyat",
+        "Sebuah jenis makanan tradisional",
       ],
+      correctAnswer: 2,
+    },
+    {
+      question: "Apa yang mengiringi tarian Batandik?",
+      choices: ["Gelang hiang", "Irama gandang", "Wirid syair", "Pinjulang"],
       correctAnswer: 1,
-    },
-    {
-      question:
-        "Apa tujuan utama dari prosesi mandi tujuh bulan dalam tradisi Banjar?",
-      choices: [
-        "Agar ibu hamil menjadi lebih cantik",
-        "Agar proses melahirkan dapat berjalan lancar dan selamat",
-        "Agar bayi yang lahir menjadi kaya",
-        "Agar ibu hamil bisa tidur nyenyak",
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question:
-        "Apa yang diminta kepada wanita hamil dalam prosesi Mandui Baya dalam tradisi Bakumpai?",
-      choices: [
-        "Berlari mengelilingi rumah",
-        "Duduk menghadap arah matahari tenggelam dan meminum air Baya tiga kali",
-        "Membaca buku panduan kehamilan",
-        "Mengunjungi semua tetangga",
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question: "Apa itu Bapukung dalam tradisi Banjar?",
-      choices: [
-        "Cara menidurkan bayi dalam ayunan dengan posisi menyerupai posisi dalam kandungan",
-        "Cara mengajari bayi berjalan",
-        "Cara memasak makanan bayi",
-        "Cara mendandani bayi dengan pakaian tradisional",
-      ],
-      correctAnswer: 0,
-    },
-    {
-      question:
-        "Pada tahap keberapa dalam upacara Bapalas Bidan bayi dimandikan dengan air yang dicampur kambat dan mayang?",
-      choices: [
-        "Tahap pertama",
-        "Tahap kedua",
-        "Tahap ketigas",
-        "Tahap keempat",
-      ],
-      correctAnswer: 0,
     },
   ],
 };

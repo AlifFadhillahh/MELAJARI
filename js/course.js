@@ -1,15 +1,15 @@
 const items = [
-  "images/course/Adat-Istiadat.webp",
-  "images/course/Bahasa.webp",
-  "images/course/Kesenian.webp",
-  "images/course/Manuskrip.webp",
-  "images/course/Olahraga-Tradisional.webp",
-  "images/course/Pengetahuan-Tradisional.webp",
-  "images/course/Permainan-Rakyat.webp",
-  "images/course/Ritus.webp",
-  "images/course/Teknologi-tradisional.webp",
-  "images/course/Tradisi-Lisan.webp",
-]; // Daftar path gambar yang akan ditampilkan
+  { src: "images/course/Adat-Istiadat.webp", label: "Adat Istiadat" },
+  { src: "images/course/Bahasa.webp", label: "Bahasa" },
+  { src: "images/course/Kesenian.webp", label: "Kesenian" },
+  { src: "images/course/Manuskrip.webp", label: "Manuskrip" },
+  { src: "images/course/Olahraga-Tradisional.webp", label: "Olahraga Tradisional" },
+  { src: "images/course/Pengetahuan-Tradisional.webp", label: "Pengetahuan Tradisional" },
+  { src: "images/course/Permainan-Rakyat.webp", label: "Permainan Rakyat" },
+  { src: "images/course/Ritus.webp", label: "Ritus" },
+  { src: "images/course/Teknologi-tradisional.webp", label: "Teknologi Tradisional" },
+  { src: "images/course/Tradisi-Lisan.webp", label: "Tradisi Lisan" },
+]; // Daftar path gambar dan label yang akan ditampilkan
 let currentItemIndex = 0; // Indeks item saat ini
 
 const leftArrow = document.getElementById("left-arrow");
@@ -25,9 +25,9 @@ const itemURLs = {
   "images/course/Kesenian.webp": "kesenian.html",
   "images/course/Manuskrip.webp": "manuskrip.html",
   "images/course/Olahraga-Tradisional.webp": "olahraga-tradisional.html",
-  "images/course/Pengetahuan-Tradisional": "pengetahuan-tradisional.html",
+  "images/course/Pengetahuan-Tradisional.webp": "pengetahuan-tradisional.html",
   "images/course/Permainan-Rakyat.webp": "permainan-rakyat.html",
-  "images/course/Ritus": "ritus.html",
+  "images/course/Ritus.webp": "ritus.html",
   "images/course/Teknologi-tradisional.webp": "teknologi-tradisional.html",
   "images/course/Tradisi-Lisan.webp": "tradisi-lisan.html",
 };
@@ -47,7 +47,7 @@ function showNextItem() {
 
   setTimeout(() => {
     currentItemIndex = (currentItemIndex + 1) % items.length;
-    currentItem.innerHTML = `<img src="${items[currentItemIndex]}" alt="Item">`;
+    currentItem.innerHTML = `<img src="${items[currentItemIndex].src}" alt="Item"><div class="label">${items[currentItemIndex].label}</div>`;
     currentItem.classList.remove("slide-out-left");
     currentItem.classList.add("slide-in-right");
 
@@ -71,7 +71,7 @@ function showPreviousItem() {
 
   setTimeout(() => {
     currentItemIndex = (currentItemIndex - 1 + items.length) % items.length;
-    currentItem.innerHTML = `<img src="${items[currentItemIndex]}" alt="Item">`;
+    currentItem.innerHTML = `<img src="${items[currentItemIndex].src}" alt="Item"><div class="label">${items[currentItemIndex].label}</div>`;
     currentItem.classList.remove("slide-out-right");
     currentItem.classList.add("slide-in-left");
 
@@ -89,7 +89,7 @@ rightArrow.addEventListener("click", showNextItem);
 // Tambahkan event listener untuk elemen currentItem
 currentItem.addEventListener("click", function () {
   // Ambil URL dari objek itemURLs berdasarkan item yang dipilih
-  const itemURL = itemURLs[items[currentItemIndex]];
+  const itemURL = itemURLs[items[currentItemIndex].src];
 
   // Redirect pengguna ke URL yang sesuai
   if (itemURL) {

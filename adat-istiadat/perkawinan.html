@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adat Istiadat - Perkawinan</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @font-face {
+            font-family: 'Dayaknese';
+            src: url('../fonts/ARCO.ttf') format('truetype');
+        }
+        .home-grid {
+            align-items: unset;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-content {
+            width: 500px; /* Ubah ukuran lebar menjadi fix */
+            height: 400px; /* Ubah ukuran tinggi menjadi fix */
+            background-image: url('../latar.png'); 
+            background-size: 100% 100%;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .course-content-text {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* Tambahkan efek hover untuk gambar tombol */
+        #materi-button:hover, #video-button:hover {
+            transform: scale(1.1); /* Membesarkan gambar tombol */
+            transition: transform 0.3s ease; /* Menambahkan transisi */
+        }
+
+    </style>
+</head>
+
+<body style="background-image: url('../images/bg/Suku-Kalimantan.webp'); background-size: cover;">
+    <div id="rotate-device-message">
+        <pPlease rotate your device to landscape mode</p>
+    </div>
+    <section class="home-grid">
+        <div class="button-container">
+            <img src="../images/button/back.webp" class="nav-button" id="back-button">
+            <img src="../images/button/home.webp" class="nav-button" id="home-button">
+        </div>
+        <div class="container">
+            <aside>
+                <div style="width: 200px; text-align: center; position: relative;">
+                    <img src="../tombol.png" id="materi-button" style="width: 100%;">
+                    <p style="font-family: 'Dayaknese'; margin-top: -30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">Materi</p>
+                </div>
+                <div style="width: 200px; text-align: center; position: relative;">
+                    <img src="../tombol.png" id="video-button" style="width: 100%;">
+                    <p style="font-family: 'Dayaknese'; margin-top: -30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">Video</p>
+                </div>
+            </aside>
+            <div class="content-container">
+                <div class="course-content" id="course-content">
+                    <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Perkawinan</h1>
+                    <div class="course-content-text" style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+                        Dalam masyarakat sukubangsa Banjar apabila
+                        anak laki-laki sudah dewasa dan mampu
+                        berusaha untuk mencari hidup, biasanya segera
+                        dicarikan jodohnya. Pemilihan jodoh oleh orang
+                        tua ini adalah si anak tidak keliru
+                        mempersunting gadis untuk dijadikan istri
+                        sebagai teman hidup dalam rumah tangga.
+                        Karena itu menurut adat istiadat perkawinan
+                        orang Banjar ada suatu proses yang dilalui
+                        sebelum perkawinan. Adat itu meliputi beberapa
+                        kegiatan yang disebut basasuluh, badatang,
+                        bapapayuan, maatar patalian, baantaran jujuran
+                        dan bakakawinan itu sendiri.</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/orientation.js"></script>
+        <script src="../js/course/adat-istiadat/perkawinan.js"></script>
+</body>
+
+</html>
