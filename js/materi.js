@@ -107,7 +107,7 @@ currentItem.addEventListener("click", function () {
 });
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 });
 
 backButton.addEventListener("click", function () {

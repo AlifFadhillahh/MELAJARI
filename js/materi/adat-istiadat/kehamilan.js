@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Tambahkan event listener untuk tombol home
   if (homeButton) {
     homeButton.addEventListener("click", function () {
-      window.location.href = "/home.html";
+      window.location.href = "/index.html";
     });
   }
 

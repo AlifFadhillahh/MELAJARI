@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   });
 
   backButton.addEventListener("click", function () {
