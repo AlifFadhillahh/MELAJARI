@@ -1,0 +1,100 @@
+.materi-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    /* Menggunakan Flexbox untuk mengatur tata letak */
+    justify-content: center;
+    /* Memusatkan container di tengah */
+}
+
+/* Gaya untuk aside */
+aside {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+aside img {
+    display: block;
+    width: 150%;
+    margin-bottom: 50px;
+}
+
+/* Konten utama */
+.content-container {
+    flex: 1;
+    /* Memanjangkan content-container sepanjang sisa ruang */
+    padding: 150px;
+    overflow-y: auto;
+    /* Membuat konten scrollable secara vertikal jika melebihi kontainer */
+}
+
+.course-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.course-content {
+    width: 500px;
+    /* Ubah ukuran lebar menjadi fix */
+    height: 400px;
+    /* Ubah ukuran tinggi menjadi fix */
+    background-image: url('/assets/button/latar.png');
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-content-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 440px;
+    height: 280px;
+    overflow: scroll;
+}
+
+.course-content-text p {
+    margin-bottom: 20px;
+    /* Memberikan ruang antara paragraf */
+    text-align: justify;
+    /* Rata kiri untuk paragraf */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (change if necessary) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Tambahkan efek hover untuk gambar tombol */
+#materi-button:hover,
+#video-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.pagination-button {
+    width: 10%;
+}

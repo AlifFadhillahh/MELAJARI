@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Dayaknese';
+    src: url('assets/font/ARCO.ttf') format('truetype');
+}
+
+body {
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.label {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.introduction-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* Ensure full width of the viewport */
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.nav-button {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    transform: scale(1.2);
+}
+
+.nav-button:active {
+    transform: scale(0.9);
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    z-index: 2;
+    height: 20%;
+}
+
+#left-arrow {
+    left: 10px;
+}
+
+#right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+.arrow:active {
+    animation: bounce 0.2s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-50%) scale(1.2);
+    }
+
+    50% {
+        transform: translateY(-50%) scale(1.0);
+    }
+}
+
+.item {
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-block;
+    margin: 100px;
+}
+
+.item h1,
+.item h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 18px;
+    color: aliceblue;
+    margin: 10px 0;
+}
+
+.item img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.course-content {
+    width: 500px;
+    height: 400px;
+    background-image: url('/assets/button/latar.png');
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-content-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 440px;
+    height: 280px;
+    overflow: scroll;
+    color: aliceblue;
+}
+
+.slide-in-right {
+    animation: slide-in-right 0.5s forwards;
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.5s forwards;
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-out-right {
+    animation: slide-out-right 0.5s forwards;
+}
+
+@keyframes slide-out-right {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-left {
+    animation: slide-out-left 0.5s forwards;
+}
+
+@keyframes slide-out-left {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
