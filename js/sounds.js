@@ -7,3 +7,4 @@ export const sounds = {
   sfx_celebrate_horn: new Audio("../assets/audio/sfx_celebrate_horn.mp3"),
   sfx_windows_error: new Audio("../assets/audio/sfx_windows_error.mp3"),
 };
+
