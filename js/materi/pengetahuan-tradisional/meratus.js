@@ -11,25 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-                <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Olahraga
-                Tradisional Meratus
-            </h1>
-            <div class="course-content-text"
-                style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                <h2>Menyumpit</h2>
-                <p>
-                    Olahraga Manyumpit merupakan tradisi Suku Dayak Meratus yang kaya akan makna dan nilai
-                    budaya.
-                    Olahraga Manyumpit pada Suku Dayak Meratus memiliki hubungan yang erat dengan kebiasaan
-                    mereka yang bergantung pada alam. Awalnya, manyumpit digunakan sebagai alat berburu untuk
-                    mendapatkan makanan dan bahan-bahan kebutuhan hidup. Ketergantungan pada alam mendorong Suku
-                    Dayak Meratus untuk memelihara dan melestarikan alam. Mereka memahami bahwa kelestarian alam
-                    penting untuk menjamin kelangsungan hidup mereka dan generasi mendatang. Kegiatan manyumpit
-                    juga menjadi pengingat untuk menjaga keseimbangan alam, dengan tidak berlebihan dalam
-                    mengambil ekosistem yang ada di hutan mereka.
-
-                </p>
-            </div>
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Pengetahuan
+      Tradisional Meratus
+  </h1>
+  <div class="course-content-text"
+      style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+      <h2></h2>
+      <p>
+      </p>
+  </div>
                   `;
     });
   }
@@ -39,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     videoButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten video
       courseContent.innerHTML = `
-                      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Olahraga
+                      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Pengetahuan
                       Tradisional Meratus</h1>
                       <div class="course-content-text" style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                          <iframe src="https://www.youtube.com/embed/H7XaXkFb3lQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
+                          <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
                           <div class="pagination" style="text-align: center; margin-top: 20px;">
                               <img src="/assets/button/left-arrow.webp" class="pagination-button" id="prev-video" style="margin-right: 10px; cursor: pointer;">
                               <img src="/assets/button/right-arrow.webp" class="pagination-button" id="next-video" style="cursor: pointer;">
@@ -54,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const nextVideoButton = document.getElementById("next-video");
 
       let currentVideoIndex = 0;
-      const videoUrls = ["https://www.youtube.com/embed/H7XaXkFb3lQ"];
+      const videoUrls = [];
 
       const updateVideo = () => {
         const iframe = courseContent.querySelector("iframe");

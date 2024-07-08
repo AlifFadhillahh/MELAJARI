@@ -12,51 +12,51 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
       <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Pengetahuan
-      Tradisional Banjar
-  </h1>
-  <div class="course-content-text"
-      style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-      <h2>Sistem Pengobatan Bapidara</h2>
-      <p>
-          Bapidara adalah sistem pengobatan tradisional dari suku banjar. sistem pengobatan
-          tradisional ini merupakan sistem pengobatan tradisional yang telah dipraktikkan secara turun
-          temurun selama berabad-abad.
-      </p>
+                        Tradisional Banjar
+                    </h1>
+                    <div class="course-content-text"
+                        style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+                        <h2>Sistem Pengobatan Bapidara</h2>
+                        <p>
+                            Bapidara adalah sistem pengobatan tradisional dari suku banjar. sistem pengobatan
+                            tradisional ini merupakan sistem pengobatan tradisional yang telah dipraktikkan secara turun
+                            temurun selama berabad-abad.
+                        </p>
 
-      <h2>Pasar Terapung</h2>
-      <p>
-          Masyarakat Banjar di Kalimantan Selatan memiliki keterlekatan yang kuat dengan sungai.
-          Sungai bukan hanya sumber air, tetapi juga menjadi bagian kehidupan dan penghidupan bagi
-          masyarakat Suku Banjar. Sejarah masyarakat Banjar erat kaitannya dengan sungai, yang telah
-          menjadi jalur utama transportasi dan perdagangan sejak zaman dahulu kala. Permukiman
-          dibangun di sepanjang bantaran sungai, dimanfaatkan untuk berbagai kebutuhan hidup seperti
-          memasak, mencuci pakaian, dan lainnya. Banyak legenda dan cerita rakyat Banjar berlatar
-          belakang sungai, menceritakan asal-usul suku Banjar, pahlawan, dan nilai-nilai moral yang
-          dipegang teguh oleh masyarakat. Sungai juga menjadi tempat pelaksanaan berbagai upacara adat
-          masyarakat Banjar, seperti upacara Melabuh.
-      </p>
-      <p>
-          Dalam kehidupan sehari-hari, sungai menjadi jalur transportasi utama, terutama di daerah
-          pedesaan, dengan perahu tradisional seperti "jukung" dan "kelotok" yang digunakan untuk
-          mengangkut orang dan barang. Sungai juga menjadi sumber pencaharian utama bagi masyarakat
-          Banjar, terutama bagi mereka yang bekerja sebagai nelayan dan petani. Sungai kaya akan ikan
-          dan hasil pertanian yang ditanam di bantaran sungai, contohnya seperti di Pasar Terapung.
-          Selain itu, sungai menjadi sumber air utama untuk kebutuhan sehari-hari seperti mandi,
-          mencuci, dan memasak, serta mengairi sawah dan ladang. Sungai juga menjadi tempat rekreasi,
-          di mana masyarakat Banjar mandi, berenang, dan bermain di sungai untuk menyegarkan diri dan
-          bersantai.
-      </p>
+                        <h2>Pasar Terapung</h2>
+                        <p>
+                            Masyarakat Banjar di Kalimantan Selatan memiliki keterlekatan yang kuat dengan sungai.
+                            Sungai bukan hanya sumber air, tetapi juga menjadi bagian kehidupan dan penghidupan bagi
+                            masyarakat Suku Banjar. Sejarah masyarakat Banjar erat kaitannya dengan sungai, yang telah
+                            menjadi jalur utama transportasi dan perdagangan sejak zaman dahulu kala. Permukiman
+                            dibangun di sepanjang bantaran sungai, dimanfaatkan untuk berbagai kebutuhan hidup seperti
+                            memasak, mencuci pakaian, dan lainnya. Banyak legenda dan cerita rakyat Banjar berlatar
+                            belakang sungai, menceritakan asal-usul suku Banjar, pahlawan, dan nilai-nilai moral yang
+                            dipegang teguh oleh masyarakat. Sungai juga menjadi tempat pelaksanaan berbagai upacara adat
+                            masyarakat Banjar, seperti upacara Melabuh.
+                        </p>
+                        <p>
+                            Dalam kehidupan sehari-hari, sungai menjadi jalur transportasi utama, terutama di daerah
+                            pedesaan, dengan perahu tradisional seperti "jukung" dan "kelotok" yang digunakan untuk
+                            mengangkut orang dan barang. Sungai juga menjadi sumber pencaharian utama bagi masyarakat
+                            Banjar, terutama bagi mereka yang bekerja sebagai nelayan dan petani. Sungai kaya akan ikan
+                            dan hasil pertanian yang ditanam di bantaran sungai, contohnya seperti di Pasar Terapung.
+                            Selain itu, sungai menjadi sumber air utama untuk kebutuhan sehari-hari seperti mandi,
+                            mencuci, dan memasak, serta mengairi sawah dan ladang. Sungai juga menjadi tempat rekreasi,
+                            di mana masyarakat Banjar mandi, berenang, dan bermain di sungai untuk menyegarkan diri dan
+                            bersantai.
+                        </p>
 
-      <h2>Pamali Menyapu rumah di malam hari</h2>
-      <p>
-          Di dalam budaya Suku Banjar, terdapat pantangan menyapu rumah di malam hari. Tradisi ini
-          telah diwariskan turun-temurun dan masih banyak dipraktikkan hingga saat ini. Alasan utama
-          dibalik pantangan ini adalah kepercayaan bahwa menyapu rumah di malam hari dapat menarik
-          rezeki keluar rumah. Hal ini diyakini karena di malam hari, dipercaya bahwa energi negatif
-          dan makhluk halus lebih mudah masuk ke dalam rumah. Menyapu di malam hari dikhawatirkan
-          dapat mengganggu keseimbangan energi di dalam rumah dan membawa kesialan.
-      </p>
-  </div>
+                        <h2>Pamali Menyapu rumah di malam hari</h2>
+                        <p>
+                            Di dalam budaya Suku Banjar, terdapat pantangan menyapu rumah di malam hari. Tradisi ini
+                            telah diwariskan turun-temurun dan masih banyak dipraktikkan hingga saat ini. Alasan utama
+                            dibalik pantangan ini adalah kepercayaan bahwa menyapu rumah di malam hari dapat menarik
+                            rezeki keluar rumah. Hal ini diyakini karena di malam hari, dipercaya bahwa energi negatif
+                            dan makhluk halus lebih mudah masuk ke dalam rumah. Menyapu di malam hari dikhawatirkan
+                            dapat mengganggu keseimbangan energi di dalam rumah dan membawa kesialan.
+                        </p>
+                    </div>
                 `;
     });
   }

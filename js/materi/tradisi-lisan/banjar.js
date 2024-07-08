@@ -11,41 +11,49 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Ritus
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Tradisi Lisan
                         Suku Banjar
                     </h1>
                     <div class="course-content-text"
                         style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                        <h2>Basalamatan</h2>
+                        <h2>Madihin</h2>
                         <p>
-                            Basalamatan adalah perayaan keci-kecilan yang diadakan dengan car mengundang keluarga dekat
-                            dan masyarakat disekitar yang di dalam pelaksanaannya terselip juga batapung tawar.
-                            basalamatan oleh masyarakat banjar biasanya diadakan jika baru memiliki rumah atau tempat
-                            tinggal baru, alat transportasi dan lain-lain.
+                            Madihin merupakan kesenian tradisional suku banjar. Kesenian madihin diperkirakan awal
+                            keberadaannya di daerah Tawia Hulu Sungai Selatan. Tokoh yang disebut mempunyai peran dalam
+                            proses penyebaran dan perkembangluasan kesenian ini adalah Dulah Nyangnyang. Pemain yang
+                            memainkan kesenian madihin ini dalam bahasa Banjar disebut dengan pamadihinan. Madihin ini
+                            diambil dari kata yang berasal dari bahasa arab yaitu madah, yang mana memiliki arti atau
+                            makna nasehat. (Thaha, 2014). Dalam madihin terdapat dua unsur utama yaitu pertama adalah
+                            unsur musik terdiri dari instrumen dan vokalitas, instrumen berupa alat musik iringan
+                            madihin yang disebut tarbang. Dalam bahasa banjar alat musik tersebut tergolong sejenis
+                            rebana berukuran sedang, dimana berfungsi sebagai pembawa ritmis dalam musik ini, dalam
+                            pembukaan madihin tarbang dimainkan sebagai pembuka pertunjukan madihin. Selain instrumen
+                            dalam madihin terdapat juga unsur vokalitas yang terdiri dari naskah syair dalam madihin,
+                            notasi madihin bersifat pengulangan, dan kebermaknaan lirik madihin ini yang membuat
+                            keunikan tersendiri dalam pertunjukannya.
                         </p>
 
-                        <h2>Piduduk</h2>
+                        <h2>Balamut</h2>
                         <p>
-                            Menurut Mukhlis Maman budayawan Banjar, piduduk berarti mahar, alat pembayaran atau alat
-                            barter, pada masa lalu masyarakat Banjar belum mengenal uang sebagai alat pembayaran. Uang
-                            baru dikenal Masyarakat Banjar sebagai alat pembayaran sejak Belanda datang, maka dari itu
-                            pada sebelumnya alat untuk pembayaran berupa barang (Maman, 2019). Tradisi piduduk selalu
-                            ada ketika akan menjalani acara-acara hajatan, seperti acara perkawinan, mandi tujuh bulan
-                            untuk perempuan hamil, baayun maulid, mandi pengantin, ketika akan mengadakan pertunjukan
-                            tradisional Banjar, selamatan untuk membangun rumah, dan merias pengantin (Jamalie, 2014).
-                            Dalam acara perkawinan adat masyarakat Banjar, piduduk merupakan salah satu tradisi yang
-                            menjadi bagian sangat penting dan sebagai hidangan untuk roh-roh dan makhluk halus agar
-                            kedua mempelai atau keluarga tidak diganggu oleh makhluk halus, selain itu supaya pengantin
-                            tidak kesurupan ketika memakai baju pengantin adat Banjar. Piduduk disediakan sebelum acara
-                            resepsi perkawinan dilangsungkan hingga selesai acara. Piduduk diletakkan di tempat tertentu
-                            yang dijadikan pusat acara, seperti di bawah pelaminan, di ranjang pengantin atau di tempat
-                            yang dinilai strategis oleh yang menyediakannya. Menurut kepercayaan masyarakat Banjar,
-                            apabila piduduk tidak disediakan ketika akan melangsungkan acara perkawinan maka akan
-                            membuat makhluk halus marah dan akan mengganggu acara perkawinan. Umumnya piduduk memiliki
-                            tujuan, perangkat dan makna simbol yang berbeda-beda, seperti halnya piduduk untuk acara
-                            bapalas bidan, yaitu upacarapemberkatan yang dilakukan oleh bidan (dukun beranak) terhadap
-                            bayi dan ibunya.
+                            Balamut, atau Lamut, adalah seni tradisi lisan bercerita rakyat yang berasal dari Kalimantan
+                            Selatan. Tradisi ini telah ada sejak lama dan diwariskan turun-temurun dalam masyarakat
+                            Banjar. Balamut biasanya dipentaskan pada malam hari, ditemani alunan musik tradisional dan
+                            disuguhkan kepada para pendengar. Balamut merupakan salah satu kekayaan budaya tak benda
+                            yang dimiliki oleh Kalimantan Selatan. Tradisi ini memiliki nilai sejarah, budaya, dan
+                            pendidikan yang tinggi. Oleh karena itu, Balamut perlu terus dilestarikan dan dikembangkan
+                            agar dapat menjadi warisan budaya yang berharga bagi generasi penerus.
+                        </p>
 
+                        <h2>Mamanda</h2>
+                        <p>
+                            Kesenian tradisional khas Kalimantan Selatan lainnya yaitu Mamanda. Mamanda merupakan seni
+                            pentas teater tradisional Banjar. Menceritakan kisah-kisah kehidupan masyarakat terdahulu,
+                            perjuangan kemerdekaan, kritik sosial
+                            dan politik yang berkembang. Kesenian Mamanda memiliki nilai komunikasi yang relevan untuk
+                            meningkatkan etika komunikasi. Setiap karya sastra tentunya memiliki nilai-nilai,
+                            seperti nilai budaya, nilai humor, nilai moral, nilai sosial, nilai religius, nilai nilal
+                            kal karakter, al dan lain-lain. Nilai-nilai dalam karya sastra mampu memberikan kontribusi
+                            kebaikan kebajikan hidup hidup untuk menjadi lebih baik
                         </p>
                     </div>
                 `;
@@ -57,10 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
     videoButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten video
       courseContent.innerHTML = `
-                    <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Ritus
+                    <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Tradisi Lisan
                     Suku Banjar</h1>
                     <div class="course-content-text" style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                        <iframe src="https://www.youtube.com/embed/vVPCeAhisU0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
+                        <iframe src="https://www.youtube.com/embed/gGiY1eGXFqI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
                         <div class="pagination" style="text-align: center; margin-top: 20px;">
                             <img src="/assets/button/left-arrow.webp" class="pagination-button" id="prev-video" style="margin-right: 10px; cursor: pointer;">
                             <img src="/assets/button/right-arrow.webp" class="pagination-button" id="next-video" style="cursor: pointer;">
@@ -73,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let currentVideoIndex = 0;
       const videoUrls = [
-        "https://www.youtube.com/embed/vVPCeAhisU0",
-        "https://www.youtube.com/embed/ieh3GfnW1Uc",
+        "https://www.youtube.com/embed/gGiY1eGXFqI",
+        "https://www.youtube.com/embed/gO2O9alT4pE",
       ];
 
       const updateVideo = () => {

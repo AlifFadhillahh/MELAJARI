@@ -11,35 +11,42 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-                <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Pengetahuan
-                Tradisional Bakumpai
-            </h1>
-            <div class="course-content-text"
-                style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                <h2>Sistem Pengobatan Bahintuk</h2>
-                <p>
-                    Bahintuk adalah sistem pengobatan tradisional dari suku bakumpai. bahintuk di lakukan dengan
-                    cara mengabil sedikit ramput di kepala lalu di tarik dengan perlahan lalu kencang hingga
-                    berbunyi. umumnya bahintuk di lakukan secara langsung dari yang tukang hintuk kepada yang
-                    sakit, akan tetapi jika yang sakit tidak bisa melakukan hintuk, maka bisa di gantikan dengan
-                    kerabat dekat contohnya: suami bisa di gantikan dengan istri begitupun sebaliknya. akan
-                    tetapi sebelum di wakilkan antara yang sakit dengan yang akan mewakilkan, yang mewakilkan
-                    terlebih dahulu menempelkan kepadanya kepada yang sakit. Hal tersebut sebagai syarat dari
-                    pengobatan tradisional bahintuk dari suku bakumpai apabila yang sakit tidak bisa menjalankan
-                    tradisi bahi tuk tersebut.
-                </p>
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Pengetahuan
+      Tradisional Bakumpai
+  </h1>
+  <div class="course-content-text"
+      style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+      <h2>Sistem pengobatan Bahintuk</h2>
+      <p>Bahintuk adalah sistem pengobatan tradisional dari suku bakumpai. bahintuk di lakukan dengan
+          cara mengabil sedikit ramput di kepala lalu di tarik dengan perlahan lalu kencang hingga
+          berbunyi. umumnya bahintuk di lakukan secara langsung dari yang tukang hintuk kepada yang
+          sakit, akan tetapi jika yang sakit tidak bisa melakukan hintuk, maka bisa di gantikan dengan
+          kerabat dekat contohnya: suami bisa di gantikan dengan istri begitupun sebaliknya. akan
+          tetapi sebelum di wakilkan antara yang sakit dengan yang akan mewakilkan, yang mewakilkan
+          terlebih dahulu menempelkan kepadanya kepada yang sakit. Hal tersebut sebagai syarat dari
+          pengobatan tradisional bahintuk dari suku bakumpai apabila yang sakit tidak bisa menjalankan
+          tradisi bahi tuk tersebut.
+      </p>
 
-                <h2>Pantangan Pingit</h2>
-                <p>
-                    Segala Adat istiadat atau tradisi yang diwariskan secara turun temurun oleh nenek moyang
-                    Suku Bakumpai merupakan suatu keharusan yang dilakukan oleh keturunannya karena ada suatu
-                    istilah pada masyarakat suku dayak bakumpai adalah “Pamali ida tau ilihi jite akan syarat
-                    auh uluh bakas batuh”. Makna dari perkataan ini yaitu jika amanat dan wasiat dari orang tua
-                    dan para leluhur dilanggar, maka niscaya akan membawa akibat jika meninggalkan syarat
-                    tersebut. Akibat tersebut diasumsikan sebagai hal buruk yang dapat menimpa kepada pasangan
-                    pengantin kelak, keluarga pengantin dan lingkungannya atau masyarakat sekitarnya.
-                </p>
-            </div>
+      <h2>Pengelolaan ekosistem lahan rawa gambut </h2>
+      <p>Di Kalimantan Selatan, masyarakat Suku Bakumpai banyak didapati di daerah rawa-rawa yakni di
+          sepanjang sungai barito. Jenis lahan basah di daerah Barito Kuala berjenis lahan basah rawa
+          gambut. Lahan basah Ekosistem hutan rawa gambut menjadi sumber penghidupan bagi masyarakat
+          lahan basah rawagambut sebagai sandaran utama kehidupan masyarakat, baik berupa kayu ataupun
+          non-kayu,seperti buah-buahan, rotan, tanaman obat, dan ikan. Sebagian lahan gambut yang
+          dangkal atau berdekatan dengan lahan mineral kemudian dijadikan sebagai wilayah pertanian.
+      </p>
+
+      <h2>Pantangan Pingit</h2>
+      <p>Segala Adat istiadat atau tradisi yang diwariskan secara turun temurun oleh nenek moyang Suku
+          Bakumpai merupakan suatu keharusan yang dilakukan oleh keturunannya karena ada suatu istilah
+          pada masyarakat suku dayak bakumpai adalah “Pamali ida tau ilihi jite akan syarat auh uluh
+          bakas batuh”. Makna dari perkataan ini yaitu jika amanat dan wasiat dari orang tua dan para
+          leluhur dilanggar, maka niscaya akan membawa akibat jika meninggalkan syarat tersebut.
+          Akibat tersebut diasumsikan sebagai hal buruk yang dapat menimpa kepada pasangan pengantin
+          kelak, keluarga pengantin dan lingkungannya atau masyarakat sekitarnya.
+      </p>
+  </div>
                   `;
     });
   }
