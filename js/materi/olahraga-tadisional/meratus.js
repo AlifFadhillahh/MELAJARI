@@ -11,25 +11,25 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-                <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Olahraga
-                Tradisional Meratus
-            </h1>
-            <div class="course-content-text"
-                style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                <h2>Menyumpit</h2>
-                <p>
-                    Olahraga Manyumpit merupakan tradisi Suku Dayak Meratus yang kaya akan makna dan nilai
-                    budaya.
-                    Olahraga Manyumpit pada Suku Dayak Meratus memiliki hubungan yang erat dengan kebiasaan
-                    mereka yang bergantung pada alam. Awalnya, manyumpit digunakan sebagai alat berburu untuk
-                    mendapatkan makanan dan bahan-bahan kebutuhan hidup. Ketergantungan pada alam mendorong Suku
-                    Dayak Meratus untuk memelihara dan melestarikan alam. Mereka memahami bahwa kelestarian alam
-                    penting untuk menjamin kelangsungan hidup mereka dan generasi mendatang. Kegiatan manyumpit
-                    juga menjadi pengingat untuk menjaga keseimbangan alam, dengan tidak berlebihan dalam
-                    mengambil ekosistem yang ada di hutan mereka.
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Olahraga
+      Tradisional Meratus
+  </h1>
+  <div class="course-content-text"
+      style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+      <h2>Menyumpit</h2>
+      <p>
+          Olahraga Manyumpit merupakan tradisi Suku Dayak Meratus yang kaya akan makna dan nilai
+          budaya.
+          Olahraga Manyumpit pada Suku Dayak Meratus memiliki hubungan yang erat dengan kebiasaan
+          mereka yang bergantung pada alam. Awalnya, manyumpit digunakan sebagai alat berburu untuk
+          mendapatkan makanan dan bahan-bahan kebutuhan hidup. Ketergantungan pada alam mendorong Suku
+          Dayak Meratus untuk memelihara dan melestarikan alam. Mereka memahami bahwa kelestarian alam
+          penting untuk menjamin kelangsungan hidup mereka dan generasi mendatang. Kegiatan manyumpit
+          juga menjadi pengingat untuk menjaga keseimbangan alam, dengan tidak berlebihan dalam
+          mengambil ekosistem yang ada di hutan mereka.
 
-                </p>
-            </div>
+      </p>
+  </div>
                   `;
     });
   }
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const nextVideoButton = document.getElementById("next-video");
 
       let currentVideoIndex = 0;
-      const videoUrls = ["https://www.youtube.com/embed/H7XaXkFb3lQ"];
+      const videoUrls = [];
 
       const updateVideo = () => {
         const iframe = courseContent.querySelector("iframe");

@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Tambahkan event listener untuk tombol back
   if (backButton) {
     backButton.addEventListener("click", function () {
-      window.location.href = "/kesenian.html";
+      window.location.href = "/ritus.html";
     });
   }
 });

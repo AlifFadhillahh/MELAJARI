@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Bahasa Suku Banjar",
       description: "",
-      url: "materi/bahasa/banjar.html",
+      url: "https://repositori.kemdikbud.go.id/2888/1/Kamus%20Banjar%20-%20Indonesia%20%20%20%20%20-%20%20%20189h.pdf",
     },
     {
       title: "Bahasa Suku Meratus",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Bahasa Suku Bakumpai",
       description: "",
-      url: "materi/bahasa/bakumpai.html",
+      url: "https://repositori.kemdikbud.go.id/2874/1/Kamus%20Bahasa%20Indonesia%20Bakumpai%20II%20%20%20%20%20257a.pdf",
     },
     {
       title: "Evaluasi",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cardElement.classList.add("card");
 
     cardElement.innerHTML = `
-            <img src="/assets/button/latar.png" alt="${card.title}">
+            <img src="/assets/button/latar.webp" alt="${card.title}">
             <div class="content">
                 <h3>${card.title}</h3>
                 <p>${card.description}</p>

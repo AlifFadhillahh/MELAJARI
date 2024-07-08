@@ -11,36 +11,36 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-            <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Olahraga
-            Tradisional Banjar
-        </h1>
-        <div class="course-content-text"
-            style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-            <h2>Kuntau</h2>
-            <p>
-                Kuntau adalah seni bela diri tradisional yang berasal dari suku Banjar di Kalimantan
-                Selatan. Selain digunakan untuk membela diri, seni bela diri Kuntau juga sering ditampilkan
-                dalam acara pernikahan, hajatan, dan event kebudayaan daerah. Menariknya, Kuntau tidak
-                memiliki batasan umur; baik anak-anak, remaja, maupun dewasa dapat mempelajari kesenian
-                tradisional ini. Perlombaan Kuntau juga diadakan di berbagai tingkatan, mulai dari tingkat
-                kota hingga nasional, untuk melestarikan dan mempopulerkan seni bela diri ini di kalangan
-                generasi muda di Kalimantan Selatan.
-            </p>
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Olahraga
+                        Tradisional Banjar
+                    </h1>
+                    <div class="course-content-text"
+                        style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+                        <h2>Kuntau</h2>
+                        <p>
+                            Kuntau adalah seni bela diri tradisional yang berasal dari suku Banjar di Kalimantan
+                            Selatan. Selain digunakan untuk membela diri, seni bela diri Kuntau juga sering ditampilkan
+                            dalam acara pernikahan, hajatan, dan event kebudayaan daerah. Menariknya, Kuntau tidak
+                            memiliki batasan umur; baik anak-anak, remaja, maupun dewasa dapat mempelajari kesenian
+                            tradisional ini. Perlombaan Kuntau juga diadakan di berbagai tingkatan, mulai dari tingkat
+                            kota hingga nasional, untuk melestarikan dan mempopulerkan seni bela diri ini di kalangan
+                            generasi muda di Kalimantan Selatan.
+                        </p>
 
-            <h2>Balap Jukung</h2>
-            <p>
-                Balap jukung adalah perlombaan jukung atau perahu tradisional yang berlangsung di aliran
-                sungai. Perlombaan ini merupakan salah satu tradisi yang khas dari suku Banjar di Kalimantan
-                Selatan. Jadalah sampan kecil yang tidak bermesin dan memerlukan dayung atau galah agar bisa
-                melaju di air. Jukung telah menjadi bagian hidup masyarakat Banjar sejak dulu, dan meskipun
-                sekarang kita lebih sering melihatnya di wilayah-wilayah lain di Indonesia, seperti Bali dan
-                Sumatera, asal-usulnya tetap terkait erat dengan suku Banjar. Jukung digunakan untuk
-                berbagai keperluan, termasuk transportasi sehari-hari, perjalanan sungai, dan kegiatan
-                budaya. Jukung bukan hanya alat transportasi, tetapi juga bagian penting dari identitas dan
-                budaya orang Banjar. Melalui balap jukung, mereka memperlihatkan kekayaan alam dan kecintaan
-                mereka pada sungai yang mengelilingi wilayah mereka.
-            </p>
-        </div>
+                        <h2>Balap Jukung</h2>
+                        <p>
+                            Balap jukung adalah perlombaan jukung atau perahu tradisional yang berlangsung di aliran
+                            sungai. Perlombaan ini merupakan salah satu tradisi yang khas dari suku Banjar di Kalimantan
+                            Selatan. Jadalah sampan kecil yang tidak bermesin dan memerlukan dayung atau galah agar bisa
+                            melaju di air. Jukung telah menjadi bagian hidup masyarakat Banjar sejak dulu, dan meskipun
+                            sekarang kita lebih sering melihatnya di wilayah-wilayah lain di Indonesia, seperti Bali dan
+                            Sumatera, asal-usulnya tetap terkait erat dengan suku Banjar. Jukung digunakan untuk
+                            berbagai keperluan, termasuk transportasi sehari-hari, perjalanan sungai, dan kegiatan
+                            budaya. Jukung bukan hanya alat transportasi, tetapi juga bagian penting dari identitas dan
+                            budaya orang Banjar. Melalui balap jukung, mereka memperlihatkan kekayaan alam dan kecintaan
+                            mereka pada sungai yang mengelilingi wilayah mereka.
+                        </p>
+                    </div>
                 `;
     });
   }

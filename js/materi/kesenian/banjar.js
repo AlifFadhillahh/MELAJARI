@@ -11,29 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Permainan
-                        Rakyat Banjar
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Kesenian
+                        Suku Banjar
                     </h1>
                     <div class="course-content-text"
                         style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                        <h2>Balogo</h2>
-                        <p>
-                            Permainan balogo diambil dari kata dasar "logo” dengan tambahan awalan "ba” (Bahasa Banjar),
-                            yang berarti permainan yang mempergunakan alat logo. Permainan balogo dilakukan oleh
-                            anak-anak laki usia Sekolah Dasar dan juga oleh anak-anak remaja. Tidak atau jarang sekali
-                            dilakukan oleh anak-anak perempuan. Permainan ini biasanya dilakukan di halaman rumah, di
-                            atas tanah keras yang datar yang memanjang, meskipun tidak terlalu luas.
-                        </p>
-
-                        <h2>Ba Cuk Cuk Bimbi</h2>
-                        <p>
-                            Permainan bacukcuk bimbi diambil dari kata dasar "cukcuk bimbi" dengan tambahan awalan kata
-                            "ba" (Bahasa Banjar) yang berarti main cukcuk bimbi. Tidak jelas asal dan arti dari kata
-                            cukcuk bimbi tersebut. Permainan biasanya dilakukan oleh paling sedikit oleh 3 orang anak
-                            atau sampai 5 orang anak perempuan dalam usia Sekolah Dasar atau gadis remaja. Kadang-kadang
-                            juga dimainkan oleh anak-anak laki dengan mengambil tempat di palatar rumah pada waktu siang
-                            hari, bahkan kadang-kadang juga bisa pada malam hari.
-                        </p>
+                        <h2>Musik panting</h2>
+                        <h2>Kuriding</h2>
+                        <h2>Sinoman hadrah</h2>
+                        <h2>Andi-andi</h2>
+                        <h2>Air guci</h2>
+                        <h2>Kain Sasirangan</h2>
+                        <h2>Kaukah</h2>
+                        <h2>Batu permata</h2>
                     </div>
                 `;
     });
@@ -44,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
     videoButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten video
       courseContent.innerHTML = `
-                    <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Permainan
-                    Rakyat Banjar</h1>
+                    <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Kesenian
+                    Suku Banjar</h1>
                     <div class="course-content-text" style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                        <iframe src="https://www.youtube.com/embed/uITrESQEIs0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
+                        <iframe src="https://www.youtube.com/embed/0sVOPx03QdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
                         <div class="pagination" style="text-align: center; margin-top: 20px;">
                             <img src="/assets/button/left-arrow.webp" class="pagination-button" id="prev-video" style="margin-right: 10px; cursor: pointer;">
                             <img src="/assets/button/right-arrow.webp" class="pagination-button" id="next-video" style="cursor: pointer;">
@@ -60,8 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let currentVideoIndex = 0;
       const videoUrls = [
-        "https://www.youtube.com/embed/uITrESQEIs0",
-        "https://www.youtube.com/embed/iBvuj-1famA",
+        "https://www.youtube.com/embed/0sVOPx03QdY",
+        "https://www.youtube.com/embed/BvrYyU_b3wQ",
+        "https://www.youtube.com/embed/rsNh0Arm8B0",
       ];
 
       const updateVideo = () => {

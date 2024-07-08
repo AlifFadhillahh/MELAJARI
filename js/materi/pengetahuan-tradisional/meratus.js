@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Tambahkan event listener untuk tombol back
   if (backButton) {
     backButton.addEventListener("click", function () {
-      window.location.href = "/olahraga-tradisional.html";
+      window.location.href = "/pengetahuan-tradisional.html";
     });
   }
 });

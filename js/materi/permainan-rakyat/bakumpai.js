@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
       <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Permainan
-      Rakyat Meratus
+      Rakyat Bakumpai
   </h1>
   <div class="course-content-text"
       style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ganti isi konten dengan konten video
       courseContent.innerHTML = `
                       <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Permainan
-                      Rakyat Meratus</h1>
+                      Rakyat Bakumpai</h1>
                       <div class="course-content-text" style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
                           <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
                           <div class="pagination" style="text-align: center; margin-top: 20px;">

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuskrip - Bakumpai</title>
+    <link rel="stylesheet" href="/css/per-materi.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Dayaknese';
+            src: url('/assets/font/ARCO.ttf') format('truetype');
+        }
+    </style>
+</head>
+
+<body style="background-image: url('/assets/bg/Suku-Kalimantan.webp'); background-size: cover;">
+    <div id="rotate-device-message">
+        <p>Please rotate your device to landscape mode</p>
+    </div>
+    <img src="/assets/button/sound.webp" id="sound-button" class="nav-button"
+        style="position: absolute; top: 10px; right: 10px; cursor: pointer; z-index: 1000;">
+    <section class="materi-grid">
+        <div class="button-container">
+            <img src="/assets/button/back.webp" class="nav-button" id="back-button">
+            <img src="/assets/button/home.webp" class="nav-button" id="home-button">
+        </div>
+
+        <div class="container">
+            <aside>
+                <div style="width: 200px; text-align: center; position: relative;">
+                    <img src="/assets/button/tombol.webp" id="materi-button" style="width: 100%;">
+                    <p
+                        style="font-family: 'Dayaknese'; margin-top: -30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        Materi</p>
+                </div>
+                <div style="width: 200px; text-align: center; position: relative;">
+                    <img src="/assets/button/tombol.webp" id="video-button" style="width: 100%;">
+                    <p
+                        style="font-family: 'Dayaknese'; margin-top: -30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        Video</p>
+                </div>
+            </aside>
+            <div class="content-container">
+                <div class="course-content" id="course-content">
+                    <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Manuskrip
+                        Suku Banjar
+                    </h1>
+                    <div class="course-content-text"
+                        style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/orientation.js"></script>
+        <script src="/js/materi/manuskrip/banjar.js"></script>
+</body>
+
+</html>

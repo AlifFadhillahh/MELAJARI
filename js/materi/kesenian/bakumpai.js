@@ -11,20 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
     materiButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten materi
       courseContent.innerHTML = `
-      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Permainan
-      Rakyat Meratus
-  </h1>
-  <div class="course-content-text"
-      style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-      <h2>Tarik Upih</h2>
-      <p>
-          Menurut Wahyuni et al. (2020) permainan tarik upih adalah permainan tradisional dalam
-          mengembangkan motorik kasar berdasarkan kearifan lokal. Upih pinang sendiri bagian dari
-          pangkal dari pelepah daun pokok pinang. Daun pinang berasal dari pelepah yang dirancang
-          sebagai alat permainan edukatif, dapat dikenal yaitu permainan tarik upih. Tarik upih dapat
-          dimainkan oleh dua orang atau lebih, baik itu anak-anak maupun remaja.
-      </p>
-  </div>
+      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Kesenian
+                        Suku Bakumpai
+                    </h1>
+                    <div class="course-content-text"
+                        style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
+                        <h2>Gamelan bakumpai</h2>
+                        <h2>Sinoman</h2>
+                        <h2>Hadrah</h2>
+                        <h2>Karungut </h2>
+                        <h2>Anyaman</h2>
+                    </div>
                   `;
     });
   }
@@ -34,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
     videoButton.addEventListener("click", function () {
       // Ganti isi konten dengan konten video
       courseContent.innerHTML = `
-                      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Permainan
-                      Rakyat Meratus</h1>
+                      <h1 class="course-title" style="margin-top: 25px;margin-left: 30px; color: aliceblue;">Kesenian
+                      Suku Bakumpai</h1>
                       <div class="course-content-text" style="margin-left: 30px; margin-right: 30px; text-align: justify; color: aliceblue;">
-                          <iframe src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
+                          <iframe src="https://www.youtube.com/embed/PUa7-LjIx84" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 75%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"></iframe>
                           <div class="pagination" style="text-align: center; margin-top: 20px;">
                               <img src="/assets/button/left-arrow.webp" class="pagination-button" id="prev-video" style="margin-right: 10px; cursor: pointer;">
                               <img src="/assets/button/right-arrow.webp" class="pagination-button" id="next-video" style="cursor: pointer;">
@@ -49,7 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const nextVideoButton = document.getElementById("next-video");
 
       let currentVideoIndex = 0;
-      const videoUrls = [];
+      const videoUrls = [
+        "https://www.youtube.com/embed/PUa7-LjIx84",
+        "https://www.youtube.com/embed/xWkXabAytrE",
+      ];
 
       const updateVideo = () => {
         const iframe = courseContent.querySelector("iframe");

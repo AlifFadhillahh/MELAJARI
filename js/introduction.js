@@ -46,7 +46,7 @@ function updateItemContent() {
                             style="margin: 0 30px; text-align: justify; color: aliceblue; line-height: 1.6; font-size: 18px; overflow: hidden; max-height: 400px; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;">
                             ${
                               currentItemIndex === 4
-                                ? '<img src="assets/button/lets-play.png" class="item" id="clickable-image" alt="Clickable Image" style="margin-top: 20px;">'
+                                ? '<img src="assets/button/lets-play.webp" class="item" id="clickable-image" alt="Clickable Image" style="margin-top: 20px;">'
                                 : item.description
                             }
                         </div>

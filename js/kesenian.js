@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cardElement.classList.add("card");
 
     cardElement.innerHTML = `
-              <img src="/assets/button/latar.png" alt="${card.title}">
+              <img src="/assets/button/latar.webp" alt="${card.title}">
               <div class="content">
                   <h3>${card.title}</h3>
                   <p>${card.description}</p>

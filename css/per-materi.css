@@ -48,7 +48,7 @@ aside img {
     /* Ubah ukuran lebar menjadi fix */
     height: 400px;
     /* Ubah ukuran tinggi menjadi fix */
-    background-image: url('/assets/button/latar.png');
+    background-image: url('/assets/button/latar.webp');
     background-size: 100% 100%;
     padding: 20px;
     border-radius: 8px;
