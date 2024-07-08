@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const soundButton = document.getElementById("sound-button");
-  const audio = new Audio("assets/sound/song.mp3");
+  const audio = new Audio("/assets/sound/song.mp3");
   let isPlaying = false;
 
   // Fungsi untuk menyimpan status audio ke localStorage
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (paused === "false") {
       audio.play();
       isPlaying = true;
-      soundButton.src = "assets/button/sound.webp";
+      soundButton.src = "/assets/button/sound.webp";
     }
   }
 
@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
   soundButton.addEventListener("click", function () {
     if (isPlaying) {
       audio.pause();
-      soundButton.src = "assets/button/mute.webp";
+      soundButton.src = "/assets/button/mute.webp";
     } else {
       audio.play();
-      soundButton.src = "assets/button/sound.webp";
+      soundButton.src = "/assets/button/sound.webp";
     }
     isPlaying = !isPlaying;
   });

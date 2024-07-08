@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab7.html",
+      url: "game/bab10.html",
     },
   ];
 
