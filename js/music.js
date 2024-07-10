@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const soundButton = document.getElementById("sound-button");
-  // const audio = new Audio("/assets/sound/song.mp3");
+  const audio = new Audio("/assets/sound/song.mp3");
   let isPlaying = false;
 
   // Fungsi untuk menyimpan status audio ke localStorage
