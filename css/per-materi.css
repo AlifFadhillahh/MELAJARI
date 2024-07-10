@@ -98,3 +98,89 @@ aside img {
 .pagination-button {
     width: 10%;
 }
+
+.button-wrapper {
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.button-wrapper img {
+    width: 100%;
+}
+
+.button-wrapper p {
+    font-family: 'Dayaknese';
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/* Media query untuk perangkat dengan orientasi landscape */
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .materi-grid {
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+        padding: 0 20px;
+    }
+
+    aside {
+        padding: 20px;
+        width: 300px;
+    }
+
+    aside img {
+        display: block;
+        width: 5%;
+        margin-bottom: 50px;
+    }
+
+    .content-container {
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .course-content {
+        width: 350px;
+        /* Ubah ukuran lebar menjadi fix */
+        height: 200px;
+        /* Ubah ukuran tinggi menjadi fix */
+        background-image: url('/assets/button/latar.webp');
+        background-size: 100% 100%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-content-text {
+        font-size: 10px;
+        line-height: 1.5;
+        text-align: justify;
+        width: 300px;
+        height: 100px;
+        overflow: scroll;
+    }
+
+    .course-content-text p {
+        margin-bottom: 20px;
+        /* Memberikan ruang antara paragraf */
+        text-align: justify;
+        /* Rata kiri untuk paragraf */
+    }
+
+    .button-wrapper {
+        width: 150px;
+        /* Adjust width as needed */
+    }
+
+    .button-wrapper img {
+        width: 100%;
+    }
+}

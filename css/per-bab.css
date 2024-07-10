@@ -70,3 +70,22 @@ body {
     color: #fff;
     font-size: 0.9em;
 }
+
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .card .content h3 {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .card .content p {
+        color: #fff;
+        font-size: 0.6em;
+    }
+}

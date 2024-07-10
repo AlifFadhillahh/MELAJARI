@@ -25,21 +25,19 @@
         <div class="button-container">
             <img src="/assets/button/back.webp" class="nav-button" id="back-button">
             <img src="/assets/button/home.webp" class="nav-button" id="home-button">
+            <img src="/assets/button/fullscreen.webp" class="nav-button" id="fullscreen-button"
+                onclick="toggleFullScreen()">
         </div>
 
         <div class="container">
             <aside>
-                <div style="width: 200px; text-align: center; position: relative;">
-                    <img src="/assets/button/tombol.webp" id="materi-button" style="width: 100%;">
-                    <p
-                        style="font-family: 'Dayaknese'; margin-top: -30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                        Materi</p>
+                <div class="button-wrapper">
+                    <img src="/assets/button/tombol.webp" id="materi-button">
+                    <p>Materi</p>
                 </div>
-                <div style="width: 200px; text-align: center; position: relative;">
-                    <img src="/assets/button/tombol.webp" id="video-button" style="width: 100%;">
-                    <p
-                        style="font-family: 'Dayaknese'; margin-top: -30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                        Video</p>
+                <div class="button-wrapper">
+                    <img src="/assets/button/tombol.webp" id="video-button">
+                    <p>Video</p>
                 </div>
             </aside>
             <div class="content-container">
@@ -82,6 +80,7 @@
 
         <script src="/js/orientation.js"></script>
         <script src="/js/music.js"></script>
+        <script src="/js/fullscreen.js"></script>
         <script src="/js/materi/teknologi-tradisional/transportasi.js"></script>
 </body>
 

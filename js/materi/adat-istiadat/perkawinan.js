@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             sepintas proses tawar menawar tersebut sesungguhnya tidak elok dipandang, karena dapat
                             mempengaruhi kondisi fisik pengantin yang pada awalnya sudah mantap untuk membentuk keluarga
                             yang sakinah bisa menjadi kecewa karena tidak kecil kemungkinan bahwa perkawinan yang mereka
-                            rencanakan bisa batal hanya karena terjadi ketidaksepakatan dalam menetapkan adat jujuran.
+                            rencanakan bisa batal hanya karena terjadi ketidaksepakatan dalam menetapkan adat jujuran.
                         </p>
                     </div>
           `;
