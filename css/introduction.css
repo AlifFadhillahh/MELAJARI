@@ -218,3 +218,39 @@ body {
         opacity: 0;
     }
 }
+
+@media only screen and (max-height: 452px) and (orientation: landscape) {
+    .course-content {
+        width: 350px;
+        height: 250px;
+        background-image: url('/assets/button/latar.webp');
+        background-size: 100% 100%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-content-text {
+        font-size: 14px;
+        /* Ukuran teks diperkecil */
+        line-height: 1.5;
+        text-align: center;
+        /* Teks diatur menjadi berada di tengah */
+        width: 310px;
+        height: 150px;
+        overflow: scroll;
+        color: aliceblue;
+        margin: 0 auto;
+        /* Untuk memastikan teks berada di tengah */
+    }
+
+    .item img {
+        width: 41%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+}
