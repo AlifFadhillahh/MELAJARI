@@ -2,28 +2,28 @@ export const imagePuzzle = {
   level0: [
     {
       pieces: [
-        "../assets/img/sora-puzzle-piece-1.jpg",
-        "../assets/img/sora-puzzle-piece-2.jpg",
-        "../assets/img/sora-puzzle-piece-3.jpg",
-        "../assets/img/sora-puzzle-piece-4.jpg",
-        "../assets/img/sora-puzzle-piece-5.jpg",
-        "../assets/img/sora-puzzle-piece-6.jpg",
-        "../assets/img/sora-puzzle-piece-7.jpg",
-        "../assets/img/sora-puzzle-piece-8.jpg",
-        "../assets/img/sora-puzzle-piece-9.jpg",
+        "../assets/game/14.1.jpg",
+        "../assets/game/14.2.jpg",
+        "../assets/game/14.3.jpg",
+        "../assets/game/14.4.jpg",
+        "../assets/game/14.5.jpg",
+        "../assets/game/14.6.jpg",
+        "../assets/game/14.7.jpg",
+        "../assets/game/14.8.jpg",
+        "../assets/game/14.9.jpg",
       ],
     },
     {
       pieces: [
-        "../assets/img/bahirian-puzzle-piece-1.jpg",
-        "../assets/img/bahirian-puzzle-piece-2.jpg",
-        "../assets/img/bahirian-puzzle-piece-3.jpg",
-        "../assets/img/bahirian-puzzle-piece-4.jpg",
-        "../assets/img/bahirian-puzzle-piece-5.jpg",
-        "../assets/img/bahirian-puzzle-piece-6.jpg",
-        "../assets/img/bahirian-puzzle-piece-7.jpg",
-        "../assets/img/bahirian-puzzle-piece-8.jpg",
-        "../assets/img/bahirian-puzzle-piece-9.jpg",
+        "../assets/game/15.1.jpg",
+        "../assets/game/15.2.jpg",
+        "../assets/game/15.3.jpg",
+        "../assets/game/15.4.jpg",
+        "../assets/game/15.5.jpg",
+        "../assets/game/15.6.jpg",
+        "../assets/game/15.7.jpg",
+        "../assets/game/15.8.jpg",
+        "../assets/game/15.9.jpg",
       ],
     },
   ],
@@ -35,58 +35,61 @@ export const matchConect = {
       type: "image",
       puzzles: [
         {
-          image: "../assets/img/bahirian-puzzle-piece-9.jpg",
-          label: "Hehe1",
+          image: "../assets/game/1.jpg",
+          label: "Tradisi Bapapai",
           color: "#FF5733",
         },
         {
-          image: "../assets/img/bahirian-puzzle-piece-9.jpg",
-          label: "Hehe2",
+          image: "../assets/game/2.jpg",
+          label: "Tradisi Bapukung",
           color: "#33FF57",
         },
         {
-          image: "../assets/img/bahirian-puzzle-piece-9.jpg",
-          label: "Hehe3",
+          image: "../assets/game/3.jpg",
+          label: "Sarah Mantah",
           color: "#3357FF",
         },
         {
-          image: "../assets/img/bahirian-puzzle-piece-9.jpg",
-          label: "Hehe4",
+          image: "../assets/game/4.jpg",
+          label: "Menjagai Mayat",
           color: "#FF33A6",
         },
         {
-          image: "../assets/img/bahirian-puzzle-piece-9.jpg",
-          label: "Hehe5",
+          image: "../assets/game/5.jpg",
+          label: "Bapalas Bidan",
           color: "#FFD733",
         },
       ],
     },
+  ],
+
+  level1: [
     {
-      type: "sound",
+      type: "image",
       puzzles: [
         {
-          sound: new Audio("../assets/audio/marin.mp3"),
-          label: "Marin",
+          image: "../assets/game/6.jpg",
+          label: "Panting",
           color: "#FF5733",
         },
         {
-          sound: new Audio("../assets/audio/kobo.mp3"),
-          label: "Kobo",
+          image: "../assets/game/7.jpg",
+          label: "Sasirangan",
           color: "#33FF57",
         },
         {
-          sound: new Audio("../assets/audio/gura.mp3"),
-          label: "Gura",
+          image: "../assets/game/8.jpg",
+          label: "Kungkurung",
           color: "#3357FF",
         },
         {
-          sound: new Audio("../assets/audio/lily.mp3"),
-          label: "Lily",
+          image: "../assets/game/9.jpg",
+          label: "Babangsai",
           color: "#FF33A6",
         },
         {
-          sound: new Audio("../assets/audio/ninomae.mp3"),
-          label: "Ninomae",
+          image: "../assets/game/10.jpg",
+          label: "Anyaman",
           color: "#FFD733",
         },
       ],
@@ -97,89 +100,73 @@ export const matchConect = {
 export const multipleChoice = {
   level0: [
     {
-      question:
-        "Apa tujuan utama orang tua dalam masyarakat Banjar mencarikan jodoh untuk anak laki-laki mereka?",
-      choices: [
-        "Agar anak laki-laki bisa mandiri",
-        "Agar anak laki-laki tidak keliru mempersunting gadis",
-        "Agar keluarga mendapatkan harta",
-        "Agar anak laki-laki bisa bekerja di luar kota",
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question:
-        "Dalam tradisi Bapapai dari Suku Bakumpai, apa yang dilakukan dengan air dan bunga mayang pinang?",
-      choices: [
-        "Digunakan untuk menyiram tanaman",
-        "Digunakan untuk mencuci tangan",
-        "Dipercikkan kepada calon pengantin dan orang yang hadir",
-        "Dipakai untuk memasak",
-      ],
+      question: "../assets/game/11.jpg",
+      choices: ["Ba Cuk Cuk Bimbi", "Tarik Upih", "Balogo", "Menyumpit"],
       correctAnswer: 2,
     },
     {
-      question:
-        "Apa yang dilakukan oleh masyarakat Banjar ketika ada warga kampung yang meninggal?",
-      choices: [
-        "Mereka mengadakan pesta",
-        "Mereka pergi berlibur",
-        "Mereka membantu keluarga yang ditimpa musibah dan melayat",
-        "Mereka pindah ke kampung lain",
-      ],
-      correctAnswer: 2,
-    },
-    {
-      question:
-        "Apa yang dilakukan pada malam hari jika jenazah baru dapat dikuburkan setelah kedatangan ahli warisnya dalam adat Banjar?",
-      choices: [
-        "Menyanyi dan menari",
-        "Membacakan ayat-ayat suci Al-Quran atau Surah Yassin secara bergantian",
-        "Bermain musik tradisional",
-        "Membuat kerajinan tangan",
-      ],
+      question: "../assets/game/12.jpg",
+      choices: ["Membolang", "Ba Cuk Cuk Bimbi", "Tarik Upih", "Balogo"],
       correctAnswer: 1,
     },
     {
-      question:
-        "Apa tujuan utama dari prosesi mandi tujuh bulan dalam tradisi Banjar?",
+      question: "../assets/game/13.jpg",
+      choices: ["Tarik Upih", "Membolang", "Ba Cuk Cuk Bimbi", "Balogo"],
+      correctAnswer: 0,
+    },
+  ],
+
+  level1: [
+    {
+      question: "Apa makna dari ritual Basalamatan bagi masyarakat Banjar?",
       choices: [
-        "Agar ibu hamil menjadi lebih cantik",
-        "Agar proses melahirkan dapat berjalan lancar dan selamat",
-        "Agar bayi yang lahir menjadi kaya",
-        "Agar bayi yang lahir menjadi kaya",
+        "Ritual untuk menyambut tamu",
+        "Perayaan untuk memperingati leluhur",
+        "Upacara keagamaan untuk menolak bala",
+        "Perayaan kecil untuk merayakan kepemilikan rumah baru",
       ],
-      correctAnswer: 1,
+      correctAnswer: 3,
     },
     {
       question:
-        "Apa tujuan utama dari prosesi mandi tujuh bulan dalam tradisi Banjar?",
+        "Kapan umumnya ritual Malabuh dilakukan oleh masyarakat Banjar?",
       choices: [
-        "Berlari mengelilingi rumah",
-        "Duduk menghadap arah matahari tenggelam dan meminum air Baya tiga kali",
-        "Membaca buku panduan kehamilan",
-        "Mengunjungi semua tetangga",
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question: "Apa itu Bapukung dalam tradisi Banjar?",
-      choices: [
-        "Cara menidurkan bayi dalam ayunan dengan posisi menyerupai posisi dalam kandungan",
-        "Cara mengajari bayi berjalan",
-        "Cara memasak makanan bayi",
-        "Cara mendandani bayi dengan pakaian tradisional",
+        "Pada bulan-bulan tertentu dalam penanggalan Hijriah atau Masehi",
+        "Setiap bulan secara berkala",
+        "Hanya saat ada perayaan besar seperti pernikahan",
+        "Hanya dilakukan oleh tokoh adat setempat",
       ],
       correctAnswer: 0,
     },
     {
       question:
-        "Pada tahap keberapa dalam upacara Bapalas Bidan bayi dimandikan dengan air yang dicampur kambat dan mayang?",
+        "Apa fungsi tradisi Piduduk dalam adat perkawinan masyarakat Banjar?",
       choices: [
-        "Tahap pertama",
-        "Tahap kedua",
-        "Tahap ketiga",
-        "Tahap keempat",
+        "Sebagai simbol penghormatan kepada leluhur",
+        "Untuk mengusir roh-roh jahat",
+        "Sebagai hidangan untuk tamu undangan",
+        "Agar pengantin tidak kesurupan saat memakai pakaian adat",
+      ],
+      correctAnswer: 3,
+    },
+    {
+      question:
+        "Apa tujuan dari upacara Aruh Halarat dalam tradisi Suku Meratus?",
+      choices: [
+        "Meminta izin kepada tuhan dan penunggu pohon untuk keperluan bertani",
+        "Menyambut kedatangan musim panen",
+        "Merayakan keberhasilan panen yang melimpah",
+        "Membangun kerjasama gotong royong di antara petani",
+      ],
+      correctAnswer: 0,
+    },
+    {
+      question: "Apa yang dilakukan dalam tradisi Manugal suku Meratus?",
+      choices: [
+        "Ritual penanaman benih bersama keluarga dan tetangga",
+        "Upacara meminta berkah kepada dewa tanah",
+        "Ritual memohon perlindungan sebelum memanen",
+        "Acara memohon izin kepada pohon sebelum menebang",
       ],
       correctAnswer: 0,
     },
@@ -189,16 +176,43 @@ export const multipleChoice = {
 export const wordPuzzle = {
   level0: [
     {
-      word: "sayur",
-      hint: "hijau",
+      word: "BUNGAS",
+      hint: "bahasa Banjar bagus, indah, cantik",
     },
     {
-      word: "mayur",
-      hint: "setelah sayur",
+      word: "ANDAU",
+      hint: "bahasa Bakumpai hari ",
     },
     {
-      word: "muyur",
-      hint: "setelah sayur",
+      word: "KUMAN",
+      hint: "bahasa Bakumpai makan",
+    },
+    {
+      word: "HIMUNG",
+      hint: "bahasa Banjar senang, suka",
+    },
+    {
+      word: "WAGAS",
+      hint: "bahasa Banjar sehat, sembuh",
+    },
+  ],
+
+  level1: [
+    {
+      word: "MADIHIN",
+      hint: "Tradisi Lisan Banjar",
+    },
+    {
+      word: "BATANDIK",
+      hint: "Tradisi Lisan Meratus",
+    },
+    {
+      word: "MAMANDA",
+      hint: "Tradisi Lisan Banjar",
+    },
+    {
+      word: "BALAMUT",
+      hint: "Tradisi Lisan Banjar",
     },
   ],
 };
@@ -206,16 +220,15 @@ export const wordPuzzle = {
 export const findWordPuzzle = {
   level0: [
     {
-      words: ["HELLO", "WORLD", "CODE", "JAVA", "SCRIPT"],
-      hint: "Hello World Code Java Script",
+      words: ["BALAPJUKUNG"],
+      hint: "Kuntau, Manyumpit, dan Balap Jukung",
     },
+  ],
+
+  level1: [
     {
-      words: ["LIKE", "SHARE", "SUBSCRIBE", "DAN", "SUPPORT"],
-      hint: "Like, share, subscribe dan support",
-    },
-    {
-      words: ["SAYUR", "MAYUR", "MUYUR", "SULUR", "SLUR"],
-      hint: "Sayur mayur muyur sulur slur",
+      words: ["BAPIDARA", "BAHINTUK", "MELABUH"],
+      hint: "Bapidara, Bahintuk, dan Melabuh",
     },
   ],
 };
