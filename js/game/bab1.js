@@ -57,10 +57,15 @@ function initializePuzzle() {
     const nameButtonsWrapper = document.createElement("div");
     nameButtonsWrapper.classList.add("name-buttons");
 
+    var margin = "100px";
+    if(window.matchMedia("(orientation: landscape)").matches){
+      margin = "50px";
+    }
+
     if (isSoundPuzzle) {
-      targetButtonsWrapper.style.marginRight = "100px";
+      targetButtonsWrapper.style.marginRight = margin;
     } else {
-      targetButtonsWrapper.style.marginBottom = "100px";
+      targetButtonsWrapper.style.marginBottom = margin;
     }
 
     const targetButton = document.createElement("button");
