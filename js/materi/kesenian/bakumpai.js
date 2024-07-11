@@ -21,6 +21,21 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h2>Hadrah</h2>
                         <h2>Karungut </h2>
                         <h2>Anyaman</h2>
+                        <p>
+                            Kalimantan Selatan sebagai daerah yang memiliki dataran rendah berair, seperti sungai, danau
+                            dan rawa. Banyak ditumbuhi berbagai jenis tumbuhan liar di antaranya tanaman purun. Tanaman
+                            purun tumbuh subur hamper di seluruh Kalimantan Selatan, khususnya di daerah Barito Kuala
+                            pada suku dayak bakumpai. Selain dimanfaatkan untuk keperluan hidup sebagai bahan baku
+                            anyaman, purun juga memiliki makna bagi perilaku manusia. Hal ini menunjukkan bahwa tumbuhan
+                            ini sangat dekat dengan kehidupan sehari-hari dan memberikan inspirasi bagi kearifan budaya
+                            masyarakat Kalimantan selatan.
+                        </p>
+                        <p>
+                            Jenis purun yang tumbuh di Kalimantan Selatan terdiri atas purun danau dan purun tikus.
+                            Tumbuhan purun oleh masyarakat Kalimantan Selatan telah dimanfaatkan sebagai kerajinan rumah
+                            tangga antara lain sebagai tikar, tas, topi, bakul, sejadah, hiasan dinding dan aksesoris
+                            lainnya.
+                        </p>
                     </div>
                   `;
     });

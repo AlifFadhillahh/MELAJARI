@@ -243,9 +243,10 @@ svg {
 
 /* Media query untuk mode landscape mobile */
 @media only screen and (max-height: 452px) and (orientation: landscape) {
-    .container{
+    .container {
         padding: 10px;
     }
+
     h1 {
         font-size: 14px;
     }

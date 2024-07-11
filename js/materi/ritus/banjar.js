@@ -24,6 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
                             tinggal baru, alat transportasi dan lain-lain.
                         </p>
 
+                        <h2>Malabuh</h2>
+                        <p>
+                            Ritual malabuh umumnya dilakukan oleh tokoh adat, yang sering disebut sebagai tukang tamba,
+                            atau oleh keturunan keluarga yang bersangkutan. Prosesi ini dimulai dengan acara selamatan
+                            di rumah, yang melibatkan pembacaan doa untuk memohon perlindungan dan berkat. Sebagian dari
+                            sesaji makanan kemudian dibawa ke tepi sungai untuk dilabuh. Saat ditepi sungai, dilakukan
+                            pembacaan tuturan ritual yang bertujuan untuk memanggil kehadiran buaya gaib. Sesaji
+                            tersebut kemudian dilepaskan ke dalam sungai dengan cara memasukkan tangan ke dalam air
+                            hingga siku, dengan gerakan yang mengingatkan pada menyodorkan makanan kepada buaya
+                            tersebut. Proses ini tidak hanya merupakan penghormatan kepada buaya, tetapi juga merupakan
+                            manifestasi dari hubungan spiritual yang dalam antara masyarakat Banjar dan alam sekitarnya.
+                            Melalui ritual ini, mereka berharap untuk mendapatkan perlindungan dan berkah dari buaya
+                            gaib dan memperkuat ikatan dengan leluhur dan tradisi nenek moyang mereka.
+                            Pelaksanaan malabuh bervariasi tergantung pada adat dan kebiasaan yang diwariskan oleh nenek
+                            moyang sebelumnya. Waktu pelaksanaannya juga berbeda-beda, ada yang ditentukan berdasarkan
+                            bulan Hijriah seperti Muharram, Shafar, Rabiul Awal, atau Dzulhijjah, dan ada pula yang
+                            mengikuti penanggalan bulan Masehi.
+                        </p>
+
                         <h2>Piduduk</h2>
                         <p>
                             Menurut Mukhlis Maman budayawan Banjar, piduduk berarti mahar, alat pembayaran atau alat
@@ -45,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
                             tujuan, perangkat dan makna simbol yang berbeda-beda, seperti halnya piduduk untuk acara
                             bapalas bidan, yaitu upacarapemberkatan yang dilakukan oleh bidan (dukun beranak) terhadap
                             bayi dan ibunya.
-
                         </p>
                     </div>
                 `;

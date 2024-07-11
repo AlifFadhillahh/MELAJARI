@@ -58,7 +58,7 @@ function initializePuzzle() {
     nameButtonsWrapper.classList.add("name-buttons");
 
     var margin = "100px";
-    if(window.matchMedia("(orientation: landscape)").matches){
+    if (window.matchMedia("(orientation: landscape)").matches) {
       margin = "50px";
     }
 
@@ -261,7 +261,7 @@ function removeConnection(soundIndex, name) {
 
 // Event listeners for navigation buttons
 homeButton.addEventListener("click", () => {
-  window.location.href = "/home";
+  window.location.href = "../index.html";
 });
 
 backButton.addEventListener("click", () => {

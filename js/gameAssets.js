@@ -220,7 +220,7 @@ export const wordPuzzle = {
 export const findWordPuzzle = {
   level0: [
     {
-      words: ["BALAPJUKUNG"],
+      words: ["BALAPJUKUNG", "MANYUMPIT", "KUNTAU"],
       hint: "Kuntau, Manyumpit, dan Balap Jukung",
     },
   ],
