@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELAJARI - Forum Diskusi</title>
+    <link rel="stylesheet" href="css/discussion.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body style="background-image: url('assets/bg/Suku-Kalimantan.webp');">
+    <div id="rotate-device-message">
+        <p>Please rotate your device to landscape mode</p>
+    </div>
+    <img src="assets/button/sound.webp" id="sound-button" class="nav-button"
+        style="position: absolute; top: 10px; right: 10px; cursor: pointer; z-index: 1000;">
+
+    <section class="discussion-grid">
+        <div class="button-container">
+            <img src="assets/button/back.webp" class="nav-button" id="back-button">
+            <img src="assets/button/home.webp" class="nav-button" id="home-button">
+            <img src="assets/button/fullscreen.webp" class="nav-button" id="fullscreen-button"
+                onclick="toggleFullScreen()">
+        </div>
+    </section>
+
+    <section class="comments">
+
+        <h1 class="heading">Forum Diskusi</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="user">
+                    <div>
+                        <h3>john deo</h3>
+                        <span>22-10-2022</span>
+                    </div>
+                </div>
+                <div class="comment-box">awesome tutorial!
+                    keep going!</div>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <div>
+                        <h3>john deo</h3>
+                        <span>22-10-2022</span>
+                    </div>
+                </div>
+                <div class="comment-box">amazing way of teaching!
+                    thank you so much!
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <div>
+                        <h3>john deo</h3>
+                        <span>22-10-2022</span>
+                    </div>
+                </div>
+                <div class="comment-box">loved it, thanks for the tutorial!</div>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <div>
+                        <h3>john deo</h3>
+                        <span>22-10-2022</span>
+                    </div>
+                </div>
+                <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <div>
+                        <h3>john deo</h3>
+                        <span>22-10-2022</span>
+                    </div>
+                </div>
+                <div class="comment-box">thanks for the tutorial!
+
+                    how to download source code file?
+                </div>
+            </div>
+
+            <form action="" class="add-comment">
+                <h3>add comments</h3>
+                <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30"
+                    rows="3"></textarea>
+                <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+            </form>
+
+        </div>
+
+        <script src="js/discussion.js"></script>
+        <script src="js/orientation.js"></script>
+        <script src="js/music.js"></script>
+        <script src="js/fullscreen.js"></script>
+</body>
+
+</html>

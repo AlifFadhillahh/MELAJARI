@@ -23,6 +23,10 @@ const items = [
     title: "Let's Play!", // Item ke-5
     description: "", // Kosongkan deskripsi untuk item ke-5
   },
+  {
+    title: "Forum Diskusi", // Item ke-5
+    description: "", // Kosongkan deskripsi untuk item ke-5
+  },
 ];
 
 let currentItemIndex = 0; // Indeks item saat ini
@@ -36,29 +40,37 @@ const backButton = document.getElementById("back-button");
 function updateItemContent() {
   const item = items[currentItemIndex];
   currentItem.innerHTML = `
-                <div class="item" id="current-item">
-                <div class="content-container">
-                    <div class="course-content" id="course-content">
-                        <h1 class="course-title" style="margin-top: 25px; color: aliceblue;">
-                        ${item.title}
-                        </h1>
-                        <div class="course-content-text"
-                            style="margin: 0 30px; text-align: justify; color: aliceblue; line-height: 1.6; font-size: 18px; overflow: hidden; max-height: 400px; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;">
-                            ${
-                              currentItemIndex === 4
-                                ? '<img src="assets/button/lets-play.webp" class="item" id="clickable-image" alt="Clickable Image"">'
-                                : item.description
-                            }
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="item" id="current-item">
+  <div class="content-container">
+      <div class="course-content" id="course-content">
+          <h1 class="course-title" style="margin-top: 25px; color: aliceblue;">
+          ${item.title}
+          </h1>
+          <div class="course-content-text"
+              style="margin: 0 30px; text-align: justify; color: aliceblue; line-height: 1.6; font-size: 18px; overflow: hidden; max-height: 400px; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none;">
+              ${
+                currentItemIndex === 4
+                  ? '<img src="assets/button/lets-play.webp" class="item" id="clickable-image" alt="Clickable Image">'
+                  : currentItemIndex === 5
+                  ? '<img src="assets/button/discussion.webp" class="item" id="clickable-image" alt="Clickable Image">'
+                  : item.description
+              }
+          </div>
+      </div>
+  </div>
+</div>
     `;
 
   // Tambahkan event listener untuk gambar tombol pada item ke-5
   if (currentItemIndex === 4) {
     document.getElementById("clickable-image").addEventListener("click", () => {
       window.location.href = "materi.html";
+    });
+  }
+
+  if (currentItemIndex === 5) {
+    document.getElementById("clickable-image").addEventListener("click", () => {
+      window.location.href = "diskusi.html";
     });
   }
 
