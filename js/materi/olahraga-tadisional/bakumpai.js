@@ -73,14 +73,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Tambahkan event listener untuk tombol home
   if (homeButton) {
     homeButton.addEventListener("click", function () {
-      window.location.href = "/index.html";
+      window.location.href = "/index.php";
     });
   }
 
   // Tambahkan event listener untuk tombol back
   if (backButton) {
     backButton.addEventListener("click", function () {
-      window.location.href = "/olahraga-tradisional.html";
+      window.location.href = "/olahraga-tradisional.php";
     });
   }
 });

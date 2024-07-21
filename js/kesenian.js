@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Kesenian Suku Banjar",
       description: "",
-      url: "materi/kesenian/banjar.html",
+      url: "materi/kesenian/banjar.php",
     },
     {
       title: "Kesenian Suku Meratus",
       description: "",
-      url: "materi/kesenian/meratus.html",
+      url: "materi/kesenian/meratus.php",
     },
     {
       title: "Kesenian Suku Bakumpai",
       description: "",
-      url: "materi/kesenian/bakumpai.html",
+      url: "materi/kesenian/bakumpai.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab3.html",
+      url: "game/bab3.php",
     },
   ];
 
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

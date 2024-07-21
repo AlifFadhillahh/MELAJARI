@@ -274,11 +274,11 @@ window.onload = () => {
 };
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "../index.html";
+  window.location.href = "../index.php";
 });
 
 backButton.addEventListener("click", function () {
-  window.location.href = "../pengetahuan-tradisional.html";
+  window.location.href = "../pengetahuan-tradisional.php";
 });
 
 window.retryPuzzle = retryPuzzle;

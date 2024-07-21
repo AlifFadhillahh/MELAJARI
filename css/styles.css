@@ -47,6 +47,11 @@ html {
     transform: scale(0.9);
 }
 
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
 @media (orientation: portrait) {
     #rotate-device-message {
         display: block;

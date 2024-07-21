@@ -7,27 +7,27 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Perkawinan",
       description: "Budaya Perkawinan dalam berbagai budaya",
-      url: "materi/adat-istiadat/perkawinan.html",
+      url: "materi/adat-istiadat/perkawinan.php",
     },
     {
       title: "Kematian",
       description: "Budaya Kematian dalam berbagai budaya",
-      url: "materi/adat-istiadat/kematian.html",
+      url: "materi/adat-istiadat/kematian.php",
     },
     {
       title: "Kehamilan",
       description: "Budaya Kehamilan dalam berbagai budaya",
-      url: "materi/adat-istiadat/kehamilan.html",
+      url: "materi/adat-istiadat/kehamilan.php",
     },
     {
       title: "Kelahiran",
       description: "Budaya Kelahiran dalam berbagai budaya",
-      url: "materi/adat-istiadat/kelahiran.html",
+      url: "materi/adat-istiadat/kelahiran.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab1.html",
+      url: "game/bab1.php",
     },
   ];
 
@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

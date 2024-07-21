@@ -274,11 +274,11 @@ window.onload = () => {
 };
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "../index.html";
+  window.location.href = "../index.php";
 });
 
 backButton.addEventListener("click", function () {
-  window.location.href = "../olahraga-tradisional.html";
+  window.location.href = "../olahraga-tradisional.php";
 });
 
 window.retryPuzzle = retryPuzzle;

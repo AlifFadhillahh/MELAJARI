@@ -261,7 +261,7 @@ function removeConnection(soundIndex, name) {
 
 // Event listeners for navigation buttons
 homeButton.addEventListener("click", () => {
-  window.location.href = "../index.html";
+  window.location.href = "../index.php";
 });
 
 backButton.addEventListener("click", () => {

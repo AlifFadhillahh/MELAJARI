@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Permainan Rakyat Banjar",
       description: "",
-      url: "materi/permainan-rakyat/banjar.html",
+      url: "materi/permainan-rakyat/banjar.php",
     },
     {
       title: "Permainan Rakyat Meratus",
       description: "",
-      url: "materi/permainan-rakyat/meratus.html",
+      url: "materi/permainan-rakyat/meratus.php",
     },
     {
       title: "Permainan Rakyat Bakumpai",
       description: "",
-      url: "materi/permainan-rakyat/bakumpai.html",
+      url: "materi/permainan-rakyat/bakumpai.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab7.html",
+      url: "game/bab7.php",
     },
   ];
 
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Bahasa Suku Meratus",
       description: "",
-      url: "materi/bahasa/meratus.html",
+      url: "materi/bahasa/meratus.php",
     },
     {
       title: "Bahasa Suku Bakumpai",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab2.html",
+      url: "game/bab2.php",
     },
   ];
 
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

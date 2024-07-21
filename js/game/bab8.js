@@ -104,11 +104,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "../index.html";
+  window.location.href = "../index.php";
 });
 
 backButton.addEventListener("click", function () {
-  window.location.href = "../ritus.html";
+  window.location.href = "../ritus.php";
 });
 
 window.nextQuestion = checkAnswer;

@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Ritus Suku Banjar",
       description: "",
-      url: "materi/ritus/banjar.html",
+      url: "materi/ritus/banjar.php",
     },
     {
       title: "Ritus Suku Meratus",
       description: "",
-      url: "materi/ritus/meratus.html",
+      url: "materi/ritus/meratus.php",
     },
     {
       title: "Ritus Suku Bakumpai",
       description: "",
-      url: "materi/ritus/bakumpai.html",
+      url: "materi/ritus/bakumpai.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab8.html",
+      url: "game/bab8.php",
     },
   ];
 
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

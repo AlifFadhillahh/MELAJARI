@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Olahraga Tradsional Banjar",
       description: "",
-      url: "materi/olahraga-tradisional/banjar.html",
+      url: "materi/olahraga-tradisional/banjar.php",
     },
     {
       title: "Olahraga Tradsional Meratus",
       description: "",
-      url: "materi/olahraga-tradisional/meratus.html",
+      url: "materi/olahraga-tradisional/meratus.php",
     },
     {
       title: "Olahraga Tradsional Bakumpai",
       description: "",
-      url: "materi/olahraga-tradisional/bakumpai.html",
+      url: "materi/olahraga-tradisional/bakumpai.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab5.html",
+      url: "game/bab5.php",
     },
   ];
 
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

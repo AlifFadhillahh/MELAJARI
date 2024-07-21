@@ -7,27 +7,27 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Senjata",
       description: "",
-      url: "materi/teknologi-tradisional/senjata.html",
+      url: "materi/teknologi-tradisional/senjata.php",
     },
     {
       title: "Transportasi",
       description: "",
-      url: "materi/teknologi-tradisional/transportasi.html",
+      url: "materi/teknologi-tradisional/transportasi.php",
     },
     {
       title: "Rumah Adat",
       description: "",
-      url: "materi/teknologi-tradisional/rumah-adat.html",
+      url: "materi/teknologi-tradisional/rumah-adat.php",
     },
     {
       title: "Alat Produksi",
       description: "",
-      url: "materi/teknologi-tradisional/alat-produksi.html",
+      url: "materi/teknologi-tradisional/alat-produksi.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab9.html",
+      url: "game/bab9.php",
     },
   ];
 
@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

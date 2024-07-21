@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "../index.html";
+  window.location.href = "../index.php";
 });
 
 backButton.addEventListener("click", function () {
-  window.location.href = "../permainan-rakyat.html";
+  window.location.href = "../permainan-rakyat.php";
 });
 
 window.nextQuestion = checkAnswer;

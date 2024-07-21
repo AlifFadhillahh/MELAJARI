@@ -64,13 +64,13 @@ function updateItemContent() {
   // Tambahkan event listener untuk gambar tombol pada item ke-5
   if (currentItemIndex === 4) {
     document.getElementById("clickable-image").addEventListener("click", () => {
-      window.location.href = "materi.html";
+      window.location.href = "materi.php";
     });
   }
 
   if (currentItemIndex === 5) {
     document.getElementById("clickable-image").addEventListener("click", () => {
-      window.location.href = "diskusi.html";
+      window.location.href = "diskusi.php";
     });
   }
 
@@ -138,9 +138,9 @@ rightArrow.addEventListener("click", showNextItem);
 updateItemContent();
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "index.html";
+  window.location.href = "index.php";
 });
 
 backButton.addEventListener("click", function () {
-  window.location.href = "index.html";
+  window.location.href = "index.php";
 });

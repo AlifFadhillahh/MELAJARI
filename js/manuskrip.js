@@ -7,22 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Manuskrip Suku Banjar",
       description: "",
-      url: "materi/manuskrip/banjar.html",
+      url: "materi/manuskrip/banjar.php",
     },
     {
       title: "Manuskrip Suku Meratus",
       description: "",
-      url: "materi/manuskrip/meratus.html",
+      url: "materi/manuskrip/meratus.php",
     },
     {
       title: "Manuskrip Suku Bakumpai",
       description: "",
-      url: "materi/manuskrip/bakumpai.html",
+      url: "materi/manuskrip/bakumpai.php",
     },
     {
       title: "Evaluasi",
       description: "Tes pemahaman mu disini!",
-      url: "game/bab4.html",
+      url: "game/bab4.php",
     },
   ];
 
@@ -46,10 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   homeButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
   });
 
   backButton.addEventListener("click", function () {
-    window.location.href = "materi.html";
+    window.location.href = "materi.php";
   });
 });

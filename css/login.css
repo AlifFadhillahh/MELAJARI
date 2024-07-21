@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Dayaknese';
+    src: url('assets/font/ARCO.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Dayaknese', sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    background-color: #e6b056;
+    background-size: 100% 100%;
+    padding: 40px 60px 60px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color:  white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    color: white;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+#first-name, #last-name {
+    width: 48%;
+}
+#first-name {
+    margin-right: 3%;
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    
+}

@@ -29,16 +29,16 @@ const backButton = document.getElementById("back-button");
 
 // Objek yang menentukan URL untuk setiap item
 const itemURLs = {
-  "assets/materi/Adat-Istiadat.webp": "adat-istiadat.html",
-  "assets/materi/Bahasa.webp": "bahasa.html",
-  "assets/materi/Kesenian.webp": "kesenian.html",
-  "assets/materi/Manuskrip.webp": "manuskrip.html",
-  "assets/materi/Olahraga-Tradisional.webp": "olahraga-tradisional.html",
-  "assets/materi/Pengetahuan-Tradisional.webp": "pengetahuan-tradisional.html",
-  "assets/materi/Permainan-Rakyat.webp": "permainan-rakyat.html",
-  "assets/materi/Ritus.webp": "ritus.html",
-  "assets/materi/Teknologi-tradisional.webp": "teknologi-tradisional.html",
-  "assets/materi/Tradisi-Lisan.webp": "tradisi-lisan.html",
+  "assets/materi/Adat-Istiadat.webp": "adat-istiadat.php",
+  "assets/materi/Bahasa.webp": "bahasa.php",
+  "assets/materi/Kesenian.webp": "kesenian.php",
+  "assets/materi/Manuskrip.webp": "manuskrip.php",
+  "assets/materi/Olahraga-Tradisional.webp": "olahraga-tradisional.php",
+  "assets/materi/Pengetahuan-Tradisional.webp": "pengetahuan-tradisional.php",
+  "assets/materi/Permainan-Rakyat.webp": "permainan-rakyat.php",
+  "assets/materi/Ritus.webp": "ritus.php",
+  "assets/materi/Teknologi-tradisional.webp": "teknologi-tradisional.php",
+  "assets/materi/Tradisi-Lisan.webp": "tradisi-lisan.php",
 };
 
 // Fungsi untuk menampilkan item berikutnya
@@ -107,9 +107,9 @@ currentItem.addEventListener("click", function () {
 });
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "index.html";
+  window.location.href = "index.php";
 });
 
 backButton.addEventListener("click", function () {
-  window.location.href = "introduction.html";
+  window.location.href = "introduction.php";
 });
