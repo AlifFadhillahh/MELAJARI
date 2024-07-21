@@ -4,6 +4,8 @@ if (!isset($_SESSION['U'])) {
     header("location:login.php");
     exit();
 }
+
+include ('configs/connection.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,73 +38,58 @@ if (!isset($_SESSION['U'])) {
 
         <h1 class="heading">Forum Diskusi</h1>
 
-        <div class="box-container">
+        <div class="box-container" id="comments-container">
 
-            <div class="box">
-                <div class="user">
-                    <div>
-                        <h3>john deo</h3>
-                        <span>22-10-2022</span>
-                    </div>
-                </div>
-                <div class="comment-box">awesome tutorial!
-                    keep going!</div>
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <div>
-                        <h3>john deo</h3>
-                        <span>22-10-2022</span>
-                    </div>
-                </div>
-                <div class="comment-box">amazing way of teaching!
-                    thank you so much!
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <div>
-                        <h3>john deo</h3>
-                        <span>22-10-2022</span>
-                    </div>
-                </div>
-                <div class="comment-box">loved it, thanks for the tutorial!</div>
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <div>
-                        <h3>john deo</h3>
-                        <span>22-10-2022</span>
-                    </div>
-                </div>
-                <div class="comment-box">this is what I have been looking for! thank you so much!</div>
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <div>
-                        <h3>john deo</h3>
-                        <span>22-10-2022</span>
-                    </div>
-                </div>
-                <div class="comment-box">thanks for the tutorial!
-
-                    how to download source code file?
-                </div>
-            </div>
-
-            <form action="" class="add-comment">
-                <h3>add comments</h3>
-                <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30"
-                    rows="3"></textarea>
-                <input type="submit" value="add comment" class="inline-btn" name="add_comment">
-            </form>
 
         </div>
+        <form action="" method="post" class="add-comment" onsubmit="return validasi()">
+            <h3>add comments</h3>
+            <textarea name="comment-box" id="comment-box" placeholder="enter your comment" required maxlength="1000"
+                cols="30" rows="3"></textarea>
+            <span id="comment-error" class="error-message"></span>
+            <input type="submit" value="add comment" class="inline-btn" name="submit">
+        </form>
 
+        <script type="text/javascript">
+            function validasi() {
+                const commentBox = document.getElementById("comment-box").value;
+                const commentBoxError = document.getElementById("comment-error");
+
+                commentBoxError.textContent = "";
+                let isValid = true;
+                if (commentBox === "") {
+                    commentBoxError.textContent =
+                        "Komentar tidak boleh kosong";
+                    isValid = false;
+                }
+
+                return isValid;
+            }
+            // Function to fetch comments
+            function fetchComments() {
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "fetch_comments.php", true);
+                xhr.onload = function () {
+                    if (this.status == 200) {
+                        document.querySelector(".box-container").innerHTML = this.responseText;
+                    }
+                }
+                xhr.send();
+            }
+
+
+            // Fetch comments when the page loads
+            window.onload = function () {
+                fetchComments();
+                setTimeout(function () {
+                    var chatBox = document.getElementById('comments-container');
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 100);
+            };
+
+            // Fetch comments every 5 seconds
+            setInterval(fetchComments, 5000);
+        </script>
         <script src="js/discussion.js"></script>
         <script src="js/orientation.js"></script>
         <script src="js/music.js"></script>
@@ -110,3 +97,44 @@ if (!isset($_SESSION['U'])) {
 </body>
 
 </html>
+
+<?php
+if (isset($_POST['submit'])) {
+    if (!empty(trim($_POST['comment-box']))) {
+
+        $comment = htmlspecialchars($_POST['comment-box'], ENT_QUOTES, 'UTF-8');
+
+        // mengambil id_user
+        $sql = $connect->prepare("select id from users where username = ?");
+        $sql->bind_param("s", $_SESSION['U']);
+        $sql->execute();
+        $sql->bind_result($id_user);
+        $sql->fetch();
+        $sql->close();
+
+        // menambah data
+        $date = date("Y-m-d");
+        $sql = $connect->prepare("insert into comments (id_user, date, comment) values (?,?,?)");
+        $sql->bind_param("sss", $id_user, $date, $comment);
+        if ($sql->execute()) {
+            echo "<script type='text/javascript'>
+                    window.location.href = 'diskusi.php';
+                  </script>";
+            exit();
+        } else {
+            echo "<script type='text/javascript'>
+                    alert('Komentar gagal ditambahkan. Silakan coba lagi.');
+                    window.location.href = 'diskusi.php';
+                  </script>";
+            exit();
+        }
+    } else {
+        // Input kosong
+        echo "<script type='text/javascript'>
+                alert('Komentar tidak boleh kosong.');
+                window.location.href = 'diskusi.php';
+              </script>";
+        exit();
+    }
+}
+?>

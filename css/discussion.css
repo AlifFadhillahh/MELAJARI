@@ -56,6 +56,11 @@ body {
     color: #fff;
 }
 
+.box.self {
+    background: #fff !important;
+    color: black !important;
+}
+
 .user {
     display: flex;
     align-items: center;
@@ -70,7 +75,6 @@ body {
 }
 
 .comment-box {
-    color: #ffffff;
     line-height: 1.6;
 }
 

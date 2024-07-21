@@ -64,6 +64,17 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 $mail = new PHPMailer(true); // Instansiasi PHPMailer
 
+function generateRandomStringChars($length = 8)
+{
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[random_int(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
 if (isset($_POST['submit'])) {
     if (!empty(trim($_POST['email']))) {
         $email = htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8');
@@ -90,29 +101,65 @@ if (isset($_POST['submit'])) {
                   </script>";
             exit();
         }
+        $sql->close();
 
         // jika lolos semua pemeriksaan
         try {
+            // mengambil id_user
+            $sql = $connect->prepare("select first_name, last_name from users where email = ?");
+            $sql->bind_param("s", $email);
+            $sql->execute();
+            $sql->bind_result($firstName, $lastName);
+            $sql->fetch();
+            $sql->close();
+
+            // kode random untuk verifikasi
+            $randomCode = generateRandomStringChars();
+
             // Pengaturan Server
             $mail->isSMTP(); // Set mailer untuk menggunakan SMTP
             $mail->Host = 'smtp.gmail.com'; // Host SMTP Gmail
             $mail->SMTPAuth = true; // Aktifkan otentikasi SMTP
-            $mail->Username = 'your-email@gmail.com'; // Alamat email Gmail Anda
-            $mail->Password = 'your-email-password-or-app-password'; // Password email atau password aplikasi
+            $mail->Username = 'mediabelajarbudaya.ulm@gmail.com'; // Alamat email Gmail Anda
+            $mail->Password = 'ttqpwpnobfhflipk'; // Password email atau password aplikasi
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Aktifkan enkripsi TLS
             $mail->Port = 587; // Port untuk TLS
 
             // Pengaturan Pengirim dan Penerima
-            $mail->setFrom('your-email@gmail.com', 'Your Name');
-            $mail->addAddress('recipient@example.com', 'Recipient Name'); // Tambah alamat penerima
+            $mail->setFrom('mediabelajarbudaya.ulm@gmail.com', 'MELAJARI');
+            $mail->addAddress($email, $firstName . " " . $lastName); // Tambah alamat penerima
 
             // Konten Email
             $mail->isHTML(true); // Set email format ke HTML
-            $mail->Subject = 'Test Email from PHPMailer';
-            $mail->Body = '<h1>This is a test email</h1><p>This email is sent using PHPMailer with Gmail SMTP.</p>';
-            $mail->AltBody = 'This is a test email sent from PHPMailer with Gmail SMTP.';
+            $mail->Subject = 'Verifikasi email untuk ganti password';
+            $mail->Body = 'Ini adalah kode verifikasi untuk ganti password: <strong>' . $randomCode . '</strong>';
+            $mail->AltBody = 'Kode ini hanya bisa digunakan sekali.';
+
+            // Kirim email
+            $mail->send();
+
+            // Update data di users
+            $hashRandom = password_hash($randomCode, PASSWORD_ARGON2ID); // enkripsi dengan algoritma argon2id
+            $sql = $connect->prepare("UPDATE users SET verify = ? WHERE email = ?");
+            $sql->bind_param("ss", $hashRandom, $email);
+            $sql->execute();
+            $sql->close();
+
+            session_start();
+            $_SESSION['email'] = $email;
+
+            echo "<script type='text/javascript'>
+                alert('Email berhasil terkirim.');
+                window.location.href = 'ubah-sandi.php';
+              </script>";
+            exit();
         } catch (\Throwable $th) {
-            //throw $th;
+            // Input kosong
+            echo "<script type='text/javascript'>
+                alert('Email gagal terkirim.');
+                window.location.href = 'send-verify.php';
+              </script>";
+            exit();
         }
     } else {
         // Input kosong
@@ -122,6 +169,5 @@ if (isset($_POST['submit'])) {
               </script>";
         exit();
     }
-
 }
 ?>

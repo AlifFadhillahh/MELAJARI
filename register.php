@@ -37,7 +37,7 @@
                     <span id="re-password-error" class="error-message"></span>
                     <br>
                     <input type="submit" name="submit" value="Daftar">
-                    <a href="#">Sudah punya akun?</a>
+                    <a href="login.php">Sudah punya akun?</a>
                 </form>
             </div>
         </div>
