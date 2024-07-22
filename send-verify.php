@@ -16,6 +16,7 @@
 
     <section class="login-grid">
         <div class="button-container">
+            <img src="assets/button/back.webp" class="nav-button" id="back-button">
             <img src="assets/button/fullscreen.webp" class="nav-button" id="fullscreen-button"
                 onclick="toggleFullScreen()">
         </div>
@@ -51,6 +52,7 @@
             return isValid;
         }
     </script>
+    <script src="js/send-verify.js"></script>
     <script src="js/fullscreen.js"></script>
 </body>
 
@@ -154,9 +156,8 @@ if (isset($_POST['submit'])) {
               </script>";
             exit();
         } catch (\Throwable $th) {
-            // Input kosong
             echo "<script type='text/javascript'>
-                alert('Email gagal terkirim.');
+                alert('Email gagal terkirim. Error: " . $th . ".');
                 window.location.href = 'send-verify.php';
               </script>";
             exit();

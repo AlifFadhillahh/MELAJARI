@@ -25,6 +25,7 @@ if (!isset($_SESSION['email'])) {
 
     <section class="login-grid">
         <div class="button-container">
+            <img src="assets/button/back.webp" class="nav-button" id="back-button">
             <img src="assets/button/fullscreen.webp" class="nav-button" id="fullscreen-button"
                 onclick="toggleFullScreen()">
         </div>
@@ -87,6 +88,7 @@ if (!isset($_SESSION['email'])) {
             return isValid;
         }
     </script>
+    <script src="js/ganti-sandi.js"></script>
     <script src="js/fullscreen.js"></script>
 </body>
 
